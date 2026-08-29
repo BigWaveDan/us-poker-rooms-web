@@ -1,0 +1,229 @@
+[
+  {
+    "id": 8,
+    "slug": "saracen-casino-resort-pine-bluff-ar",
+    "name": "Saracen Casino Resort",
+    "type": "casino",
+    "address": "1 Saracen Resort Drive",
+    "city": "Pine Bluff",
+    "state": "AR",
+    "postal_code": "71601",
+    "country": "US",
+    "latitude": 34.20895000000001,
+    "longitude": -91.9625625,
+    "phone": "(870) 686-9001",
+    "website": "https://saracenresort.com/",
+    "hours": "12:00pm - 4:00am",
+    "stakes_notes": "Up to $5/$10 NLH",
+    "tournament_notes": null,
+    "notes": "10 tables",
+    "status": "verified",
+    "created_at": "2026-08-29 02:35:32",
+    "updated_at": "2026-08-29 02:37:57",
+    "games": [
+      "NLH"
+    ],
+    "sources": [
+      {
+        "url": "https://pokerlog.app/poker-rooms/arkansas/saracen-casino-resort-poker-room",
+        "title": "Saracen Casino Resort \u2014 PokerLog",
+        "retrieved_at": "2026-08-29 02:35:32"
+      },
+      {
+        "url": "https://pokerlog.app/poker-rooms/arkansas",
+        "title": "PokerLog arkansas listing",
+        "retrieved_at": "2026-08-29 02:35:32"
+      }
+    ]
+  },
+  {
+    "id": 554,
+    "slug": "saracen-poker-room-pine-bluff-ar",
+    "name": "Saracen Poker Room",
+    "type": "card_room",
+    "address": "1 Saracen Resort Dr",
+    "city": "Pine Bluff",
+    "state": "AR",
+    "postal_code": "71601",
+    "country": "US",
+    "latitude": 34.2099581,
+    "longitude": -91.9628959,
+    "phone": "(870) 686-9001",
+    "website": "https://www.saracenresort.com/gaming/poker-room/",
+    "hours": null,
+    "stakes_notes": null,
+    "tournament_notes": null,
+    "notes": "Saracen Poker Room is a sophisticated 10-table poker room set apart from the main casino floor at Saracen Casino Resort in Pine Bluff. Owned by the Quapaw Nation and named for Saracen, a Quapaw chief in the 1800s, the room offers a high-end playing experience with personalized table-side beverage service.",
+    "status": "verified",
+    "created_at": "2026-08-29 02:47:09",
+    "updated_at": "2026-08-29 02:47:09",
+    "games": [
+      "NLH",
+      "PLO",
+      "LHE"
+    ],
+    "sources": [
+      {
+        "url": "https://pokerlog.app/poker-rooms/arkansas/saracen-casino-resort-poker-room",
+        "title": "Saracen Poker Room \u2014 PokerLog guide",
+        "retrieved_at": "2026-08-29 02:47:09"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "slug": "gila-river-casino-lone-butte-chandler-az",
+    "name": "Gila River Casino - Lone Butte",
+    "type": "tribal_casino",
+    "address": "1077 S. Kyrene Rd",
+    "city": "Chandler",
+    "state": "AZ",
+    "postal_code": "85226",
+    "country": "US",
+    "latitude": 33.2655,
+    "longitude": -111.992,
+    "phone": "(800) 946-4452",
+    "website": "https://playatgila.com/play/poker/?id=3239",
+    "hours": "24/7",
+    "stakes_notes": "Up to $10/$20 NLH",
+    "tournament_notes": null,
+    "notes": "30 tables",
+    "status": "verified",
+    "created_at": "2026-08-29 02:35:32",
+    "updated_at": "2026-08-29 02:47:32",
+    "games": [
+      "NLH",
+      "TOURNAMENTS",
+      "LHE"
+    ],
+    "sources": [
+      {
+        "url": "https://pokerlog.app/poker-rooms/arizona/gila-river-casino-lone-butte-poker-room",
+        "title": "Gila River Casino - Lone Butte \u2014 PokerLog",
+        "retrieved_at": "2026-08-29 02:35:32"
+      },
+      {
+        "url": "https://pokerlog.app/poker-rooms/arizona",
+        "title": "PokerLog arizona listing",
+        "retrieved_at": "2026-08-29 02:35:32"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "slug": "desert-diamond-casino-west-valley-glendale-az",
+    "name": "Desert Diamond Casino West Valley",
+    "type": "tribal_casino",
+    "address": "9431 W. Northern Ave.",
+    "city": "Glendale",
+    "state": "AZ",
+    "postal_code": "85305",
+    "country": "US",
+    "latitude": 33.5468,
+    "longitude": -112.2613,
+    "phone": "(623) 633-8523",
+    "website": "https://www.ddcaz.com/west-valley/",
+    "hours": "10:00am - 6:00am",
+    "stakes_notes": "Up to $3/$300 NLH",
+    "tournament_notes": null,
+    "notes": "36 tables",
+    "status": "verified",
+    "created_at": "2026-08-29 02:35:32",
+    "updated_at": "2026-08-29 02:47:32",
+    "games": [
+      "NLH",
+      "LHE"
+    ],
+    "sources": [
+      {
+        "url": "https://pokerlog.app/poker-rooms/arizona/desert-diamond-casino-west-valley-poker-room",
+        "title": "Desert Diamond Casino West Valley \u2014 PokerLog",
+        "retrieved_at": "2026-08-29 02:35:32"
+      },
+      {
+        "url": "https://pokerlog.app/poker-rooms/arizona",
+        "title": "PokerLog arizona listing",
+        "retrieved_at": "2026-08-29 02:35:32"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "slug": "hon-dah-casino-pinetop-az",
+    "name": "Hon-Dah Casino",
+    "type": "tribal_casino",
+    "address": "777 Highway 260",
+    "city": "Pinetop",
+    "state": "AZ",
+    "postal_code": "85935",
+    "country": "US",
+    "latitude": 34.10427,
+    "longitude": -109.92505,
+    "phone": "(928) 369-7555",
+    "website": "https://www.hon-dah.com/service-b",
+    "hours": "4:00pm - TBD",
+    "stakes_notes": "Up to $4/$8 PLO",
+    "tournament_notes": null,
+    "notes": "4 tables",
+    "status": "verified",
+    "created_at": "2026-08-29 02:35:32",
+    "updated_at": "2026-08-29 02:47:32",
+    "games": [
+      "PLO",
+      "TOURNAMENTS",
+      "LHE"
+    ],
+    "sources": [
+      {
+        "url": "https://pokerlog.app/poker-rooms/arizona/hon-dah-casino-poker-room",
+        "title": "Hon-Dah Casino \u2014 PokerLog",
+        "retrieved_at": "2026-08-29 02:35:32"
+      },
+      {
+        "url": "https://pokerlog.app/poker-rooms/arizona",
+        "title": "PokerLog arizona listing",
+        "retrieved_at": "2026-08-29 02:35:32"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "talking-stick-resort-scottsdale-az",
+    "name": "Talking Stick Resort",
+    "type": "tribal_casino",
+    "address": "9700 East Indian Bend Rd.",
+    "city": "Scottsdale",
+    "state": "AZ",
+    "postal_code": "85256",
+    "country": "US",
+    "latitude": 33.5386,
+    "longitude": -111.865,
+    "phone": "(480) 850-8693",
+    "website": "https://www.talkingstickresort.com/phoenix-scottsdale-casino/poker/",
+    "hours": "24/7",
+    "stakes_notes": "Up to $40/$80 Mixed",
+    "tournament_notes": null,
+    "notes": "69 tables",
+    "status": "verified",
+    "created_at": "2026-08-29 02:35:32",
+    "updated_at": "2026-08-29 02:47:32",
+    "games": [
+      "MIXED",
+      "NLH",
+      "TOURNAMENTS",
+      "LHE"
+    ],
+    "sources": [
+      {
+        "url": "https://pokerlog.app/poker-rooms/arizona/talking-stick-resort-poker-room",
+        "title": "Talking Stick Resort \u2014 PokerLog",
+        "retrieved_at": "2026-08-29 02:35:32"
+      },
+      {
+        "url": "https://pokerlog.app/poker-rooms/arizona",
+        "title": "PokerLog arizona listing",
+        "retrieved_at": "2026-08-29 02:35:32"
+      }
+    ]
+  }
+]
