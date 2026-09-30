@@ -89,7 +89,7 @@ export default async function RoomsPage({
         <div className="empty">
           {list.live
             ? "No sourced rooms match these filters."
-            : "Offline fixture has no matching rooms. The live API holds the full directory."}
+            : "No rooms in the offline snapshot match these filters."}
         </div>
       ) : (
         <div className="room-list">

@@ -535,3 +535,56 @@ h2 {
     font-size: 15px;
   }
 }
+
+
+/* --- Home OSM map --- */
+.map-section {
+  margin: 1.25rem 0 0;
+}
+
+.map-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.75rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.map-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 280px);
+  gap: 12px;
+  align-items: stretch;
+}
+
+.map-canvas {
+  height: min(62vh, 560px);
+  min-height: 320px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  overflow: hidden;
+  background: #1a2219;
+  z-index: 0;
+}
+
+.map-pane {
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.map-pane h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 860px) {
+  .map-wrap {
+    grid-template-columns: 1fr;
+  }
+  .map-pane {
+    order: -1;
+  }
+}

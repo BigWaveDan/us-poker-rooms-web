@@ -1,54 +1,22 @@
 import type { Room, RoomsListResponse, StateCount, StatesResponse } from "./types";
-import fixtureRooms from "./fixture-rooms.json";
+import roomsSnapshot from "./rooms-snapshot.json";
 import { SOURCED_ZEROS, US_JURISDICTIONS } from "./states";
 
-/** Snapshot counts from the sourced database (556 rooms, 41 states). */
-const STATE_COUNTS: Record<string, number> = {
-  TX: 97,
-  CA: 65,
-  WA: 45,
-  NV: 38,
-  FL: 31,
-  MI: 29,
-  MT: 29,
-  OR: 24,
-  NH: 17,
-  IL: 16,
-  OH: 13,
-  OK: 12,
-  MN: 11,
-  PA: 11,
-  MS: 10,
-  CO: 9,
-  LA: 9,
-  AZ: 7,
-  IN: 7,
-  KY: 6,
-  MO: 6,
-  NY: 6,
-  SD: 6,
-  IA: 5,
-  WV: 5,
-  MD: 4,
-  ND: 4,
-  NJ: 4,
-  VA: 4,
-  CT: 3,
-  DE: 3,
-  NM: 3,
-  RI: 3,
-  WI: 3,
-  AR: 2,
-  KS: 2,
-  MA: 2,
-  NC: 2,
-  ME: 1,
-  NE: 1,
-  WY: 1,
-};
+/** Full offline snapshot synced from us-poker-rooms/poker.db (see scripts/refresh_rooms.py). */
+export const FIXTURE_ROOMS = roomsSnapshot as Room[];
+export const FIXTURE_ROOM_TOTAL = FIXTURE_ROOMS.length;
 
-export const FIXTURE_ROOMS = fixtureRooms as Room[];
-export const FIXTURE_ROOM_TOTAL = 556;
+function buildStateCounts(): Record<string, number> {
+  const m: Record<string, number> = {};
+  for (const r of FIXTURE_ROOMS) {
+    const code = (r.state || "").toUpperCase();
+    if (!code) continue;
+    m[code] = (m[code] ?? 0) + 1;
+  }
+  return m;
+}
+
+const STATE_COUNTS = buildStateCounts();
 
 export function fixtureStates(): StatesResponse {
   const states: StateCount[] = Object.entries(STATE_COUNTS)
@@ -108,6 +76,10 @@ export function fixtureRoomList(params: {
 
 export function fixtureRoom(slug: string): Room | null {
   return FIXTURE_ROOMS.find((r) => r.slug === slug) ?? null;
+}
+
+export function fixtureRoomsWithCoords(): Room[] {
+  return FIXTURE_ROOMS.filter((r) => r.latitude != null && r.longitude != null);
 }
 
 export function isSourcedZero(code: string): boolean {
