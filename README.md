@@ -5,6 +5,8 @@ live FastAPI (`us-poker-rooms`); when the API is down, fall back to a **full
 offline JSON snapshot** synced from `poker.db` — not a tiny 3-room fixture.
 Nothing is invented; coverage gaps stay visible.
 
+**Live site:** https://bigwavedan.github.io/us-poker-rooms-web/
+
 Companion repos:
 
 - Database / ingest / API: [`BigWaveDan/us-poker-rooms`](https://github.com/BigWaveDan/us-poker-rooms)
@@ -47,6 +49,30 @@ NEXT_PUBLIC_API_BASE=http://127.0.0.1:8000
 
 Default API base is `http://127.0.0.1:8000`.
 
+For a local static export (same as Pages):
+
+```bash
+USE_OFFLINE_SNAPSHOT=1 npm run build
+npx serve out
+```
+
+## GitHub Pages
+
+Static export (`output: 'export'`) with `basePath` `/us-poker-rooms-web`.
+The site is built with `USE_OFFLINE_SNAPSHOT=1` so the map, list, and all room
+detail pages come from `lib/rooms-snapshot.json` (no FastAPI at build time).
+The `out/` directory is published on the `gh-pages` branch (GitHub Pages
+source: Deploy from a branch → `gh-pages` / root).
+
+Redeploy after snapshot or UI changes:
+
+```bash
+USE_OFFLINE_SNAPSHOT=1 npm run build
+npx --yes gh-pages -d out -b gh-pages
+```
+
+Site URL: https://bigwavedan.github.io/us-poker-rooms-web/
+
 ## Offline snapshots
 
 | File | Contents |
@@ -79,6 +105,9 @@ for PokerLog, PokerAtlas, commissions, Bravo, and property-site notes.
 - `GET /states`
 - `GET /rooms?state=&city=&q=&status=&type=&limit=&offset=`
 - `GET /rooms/{slug}` (includes `sources`)
+
+Set `USE_OFFLINE_SNAPSHOT=1` to skip the live API and use snapshots only
+(used by the Pages build).
 
 ## Sourced zeros
 

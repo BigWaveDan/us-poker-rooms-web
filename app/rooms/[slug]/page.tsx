@@ -2,11 +2,13 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import ApiBanner from "@/components/ApiBanner";
 import StatusBadge from "@/components/StatusBadge";
-import { fetchRoom } from "@/lib/api";
+import { fetchRoom, FIXTURE_ROOMS } from "@/lib/api";
 import { formatGames, formatPlace, formatType } from "@/lib/format";
 import { stateName } from "@/lib/states";
 
-export const dynamic = "force-dynamic";
+export function generateStaticParams() {
+  return FIXTURE_ROOMS.map((room) => ({ slug: room.slug }));
+}
 
 export async function generateMetadata({
   params,

@@ -5,8 +5,6 @@ import RoomsMap from "@/components/RoomsMap";
 import { fetchHealth, fetchRooms, fetchStates } from "@/lib/api";
 import { SOURCED_ZEROS } from "@/lib/states";
 
-export const dynamic = "force-dynamic";
-
 export default async function HomePage() {
   const [health, states, roomsResult] = await Promise.all([
     fetchHealth(),
