@@ -23,11 +23,6 @@ export default async function HomePage() {
       <section className="hero">
         <div className="kicker">Live poker · sourced dataset</div>
         <h1>Map every sourced US poker room — and every gap.</h1>
-        <p className="lede">
-          Read-only collection UI over the US live poker rooms dataset. Pins
-          come from rooms with latitude and longitude. Nothing is invented; if a
-          state has zero sourced rooms, that is shown on purpose.
-        </p>
         <div className="chip-row">
           <Link href="/rooms" className="btn">
             Browse rooms
@@ -73,10 +68,6 @@ export default async function HomePage() {
 
       <section>
         <h2>Coverage</h2>
-        <p className="lede">
-          Highlighted tiles are sourced zeros: AL, AK, DC, GA, HI, ID, SC, TN,
-          UT, VT. They are not missing data — collection found no rooms.
-        </p>
         <CoverageGrid counts={states.data.states} />
       </section>
 

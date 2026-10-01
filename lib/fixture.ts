@@ -1,10 +1,17 @@
 import type { Room, RoomsListResponse, StateCount, StatesResponse } from "./types";
 import roomsSnapshot from "./rooms-snapshot.json";
 import { SOURCED_ZEROS, US_JURISDICTIONS } from "./states";
+import { mergeOneRoom, mergeRoomEdits } from "./roomEdits";
 
 /** Full offline snapshot synced from us-poker-rooms/poker.db (see scripts/refresh_rooms.py). */
 export const FIXTURE_ROOMS = roomsSnapshot as Room[];
 export const FIXTURE_ROOM_TOTAL = FIXTURE_ROOMS.length;
+
+/** Snapshot rooms with localStorage edit overlay applied (browser only; SSR = base). */
+export function getFixtureRooms(): Room[] {
+  if (typeof window === "undefined") return FIXTURE_ROOMS;
+  return mergeRoomEdits(FIXTURE_ROOMS);
+}
 
 function buildStateCounts(): Record<string, number> {
   const m: Record<string, number> = {};
@@ -41,7 +48,7 @@ export function fixtureRoomList(params: {
   limit: number;
   offset: number;
 }): RoomsListResponse {
-  let rooms = [...FIXTURE_ROOMS];
+  let rooms = [...getFixtureRooms()];
   const stateFilter = params.state;
   if (stateFilter) {
     rooms = rooms.filter((r) => r.state === stateFilter.toUpperCase());
@@ -75,11 +82,14 @@ export function fixtureRoomList(params: {
 }
 
 export function fixtureRoom(slug: string): Room | null {
-  return FIXTURE_ROOMS.find((r) => r.slug === slug) ?? null;
+  const base = FIXTURE_ROOMS.find((r) => r.slug === slug) ?? null;
+  if (!base) return null;
+  if (typeof window === "undefined") return base;
+  return mergeOneRoom(base);
 }
 
 export function fixtureRoomsWithCoords(): Room[] {
-  return FIXTURE_ROOMS.filter((r) => r.latitude != null && r.longitude != null);
+  return getFixtureRooms().filter((r) => r.latitude != null && r.longitude != null);
 }
 
 export function isSourcedZero(code: string): boolean {

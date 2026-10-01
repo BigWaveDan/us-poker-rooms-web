@@ -30,11 +30,6 @@ export default function ActivityPage() {
     <>
       <div className="kicker">Workspace</div>
       <h1>Activity</h1>
-      <p className="lede">
-        A skeleton feed for collection work. Items below are generic filler so
-        the page looks inhabited. They are not ingest history and they do not
-        add poker rooms.
-      </p>
 
       <section className="grid-2">
         <article className="card">

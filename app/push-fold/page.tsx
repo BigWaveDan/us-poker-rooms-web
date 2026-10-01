@@ -75,19 +75,23 @@ export default function PushFoldPage() {
 
         <label className="pf-field">
           <span>Position</span>
-          <div className="pf-seg pf-seg-wrap" role="radiogroup" aria-label="Position">
-            {DATA.positions.map((p) => (
-              <button
-                key={p}
-                type="button"
-                role="radio"
-                aria-checked={position === p}
-                title={POS_HINT[p]}
-                className={position === p ? "on" : undefined}
-                onClick={() => setPosition(p)}
-              >
-                {p}
-              </button>
+          <div className="pf-pos-grid" role="radiogroup" aria-label="Position">
+            {[DATA.positions.slice(0, 4), DATA.positions.slice(4)].map((row, ri) => (
+              <div className="pf-pos-row" key={ri}>
+                {row.map((p) => (
+                  <button
+                    key={p}
+                    type="button"
+                    role="radio"
+                    aria-checked={position === p}
+                    title={POS_HINT[p]}
+                    className={position === p ? "on" : undefined}
+                    onClick={() => setPosition(p)}
+                  >
+                    {p}
+                  </button>
+                ))}
+              </div>
             ))}
           </div>
         </label>

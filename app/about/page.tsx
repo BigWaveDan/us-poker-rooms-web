@@ -7,11 +7,6 @@ export default function AboutPage() {
     <>
       <div className="kicker">Product</div>
       <h1>About this workspace</h1>
-      <p className="lede">
-        US Poker Rooms is a thin collection UI over a read-only REST API. The
-        dataset is the source of truth; this site does not add rooms that are
-        not already sourced.
-      </p>
 
       <section className="grid-2">
         <article className="card">

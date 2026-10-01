@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Figtree } from "next/font/google";
 import Nav from "@/components/Nav";
+import ThemeProvider, { THEME_BOOT_SCRIPT } from "@/components/ThemeProvider";
 import "./globals.css";
 
 const display = Fraunces({
@@ -29,15 +30,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_BOOT_SCRIPT }} />
+      </head>
       <body className={`${display.variable} ${sans.variable}`}>
-        <div className="shell">
-          <Nav />
-          <main className="main">{children}</main>
-          <footer className="footer">
-            Sourced dataset only. Rooms that are not in the API are not shown.
-          </footer>
-        </div>
+        <ThemeProvider>
+          <div className="shell">
+            <Nav />
+            <main className="main">{children}</main>
+            <footer className="footer">
+              Sourced dataset only. Rooms that are not in the API are not shown.
+            </footer>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );

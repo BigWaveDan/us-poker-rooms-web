@@ -1,7 +1,8 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { mergeRoomEdits } from "@/lib/roomEdits";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import ApiBanner from "@/components/ApiBanner";
 import CoverageGrid from "@/components/CoverageGrid";
@@ -62,6 +63,18 @@ export default function RoomsDirectory({ rooms, states, live, error }: Props) {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const [mergedRooms, setMergedRooms] = useState(rooms);
+
+  useEffect(() => {
+    const apply = () => setMergedRooms(mergeRoomEdits(rooms));
+    apply();
+    window.addEventListener("poker-room-edits-changed", apply);
+    window.addEventListener("storage", apply);
+    return () => {
+      window.removeEventListener("poker-room-edits-changed", apply);
+      window.removeEventListener("storage", apply);
+    };
+  }, [rooms]);
 
   const state = (searchParams.get("state") || "").toUpperCase() || undefined;
   const city = searchParams.get("city") || undefined;
@@ -71,8 +84,8 @@ export default function RoomsDirectory({ rooms, states, live, error }: Props) {
   const offset = Math.max(0, Number(searchParams.get("offset") ?? "0") || 0);
 
   const filtered = useMemo(
-    () => filterRooms(rooms, { state, city, q, status, type }),
-    [rooms, state, city, q, status, type],
+    () => filterRooms(mergedRooms, { state, city, q, status, type }),
+    [mergedRooms, state, city, q, status, type],
   );
   const total = filtered.length;
   const page = filtered.slice(offset, offset + PAGE_SIZE);
@@ -113,10 +126,6 @@ export default function RoomsDirectory({ rooms, states, live, error }: Props) {
     <>
       <div className="kicker">Collection</div>
       <h1>Rooms</h1>
-      <p className="lede">
-        Search and filter sourced live poker rooms. Coverage tiles show every
-        US jurisdiction; amber tiles are sourced zeros — checked, none found.
-      </p>
       <ApiBanner live={live} error={error} />
 
       <h2>Coverage</h2>

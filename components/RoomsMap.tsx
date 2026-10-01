@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { mergeRoomEdits } from "@/lib/roomEdits";
 import type { Room } from "@/lib/types";
 
 type Props = {
@@ -14,9 +15,23 @@ export default function RoomsMap({ rooms, live, error }: Props) {
   const mapEl = useRef<HTMLDivElement | null>(null);
   const mapRef = useRef<import("leaflet").Map | null>(null);
   const [selected, setSelected] = useState<Room | null>(null);
+  const [editTick, setEditTick] = useState(0);
+  useEffect(() => {
+    const bump = () => setEditTick((t) => t + 1);
+    window.addEventListener("poker-room-edits-changed", bump);
+    window.addEventListener("storage", bump);
+    return () => {
+      window.removeEventListener("poker-room-edits-changed", bump);
+      window.removeEventListener("storage", bump);
+    };
+  }, []);
+  const merged = useMemo(() => {
+    void editTick;
+    return mergeRoomEdits(rooms);
+  }, [rooms, editTick]);
   const pinned = useMemo(
-    () => rooms.filter((r) => r.latitude != null && r.longitude != null),
-    [rooms],
+    () => merged.filter((r) => r.latitude != null && r.longitude != null),
+    [merged],
   );
 
   useEffect(() => {

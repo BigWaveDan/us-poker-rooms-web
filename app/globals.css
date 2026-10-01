@@ -1,4 +1,5 @@
-:root {
+:root,
+[data-theme="dark"] {
   --bg: #10140f;
   --bg-raised: #181e17;
   --bg-card: #1c241b;
@@ -18,6 +19,30 @@
   --shadow: 0 12px 40px rgba(0, 0, 0, 0.35);
   --radius: 14px;
   --nav-h: 64px;
+  --map-filter: none;
+  --input-bg: #181e17;
+}
+
+[data-theme="light"] {
+  --bg: #f4f6f1;
+  --bg-raised: #ffffff;
+  --bg-card: #ffffff;
+  --ink: #1a2218;
+  --muted: #5a6856;
+  --faint: #7a8776;
+  --line: #d5ddd0;
+  --gold: #8a6b28;
+  --gold-dim: #a8893a;
+  --felt: #2f7a4c;
+  --felt-deep: #1f5a36;
+  --zero: #c56a1e;
+  --zero-bg: #fff3e4;
+  --closed: #b04040;
+  --verified: #2a8f4e;
+  --proposed: #3a6fa0;
+  --shadow: 0 10px 28px rgba(20, 30, 18, 0.08);
+  --map-filter: none;
+  --input-bg: #ffffff;
 }
 
 * {
@@ -793,4 +818,214 @@ h2 {
     padding: 4px 6px;
     font-size: 11px;
   }
+}
+
+
+/* Settings hub + room editor */
+.settings-hub {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.settings-link {
+  display: block;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-card);
+  color: inherit;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+}
+
+.settings-link:hover {
+  border-color: var(--gold-dim);
+  text-decoration: none;
+}
+
+.settings-link h3 {
+  margin: 0 0 4px;
+  font-size: 1.05rem;
+}
+
+.settings-link p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.settings-link.disabled {
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.settings-link .soon {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+}
+
+.theme-seg {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.theme-seg button {
+  background: var(--bg-raised);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 14px;
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.theme-seg button.on {
+  background: var(--felt-deep);
+  border-color: var(--felt);
+  color: #f4fff6;
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 16px;
+}
+
+.edit-field {
+  display: grid;
+  gap: 6px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-raised);
+}
+
+.edit-field > label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--faint);
+  font-weight: 600;
+}
+
+.edit-field input,
+.edit-field textarea,
+.edit-field select {
+  background: var(--input-bg);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 8px 10px;
+  font: inherit;
+  font-size: 14px;
+  width: 100%;
+}
+
+.edit-field textarea {
+  min-height: 64px;
+  resize: vertical;
+}
+
+.edit-sources {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+}
+
+.edit-sources label {
+  display: grid;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--muted);
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 500;
+}
+
+.room-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+  max-height: 320px;
+  overflow: auto;
+}
+
+.room-picker button {
+  text-align: left;
+  background: var(--bg-card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.room-picker button:hover,
+.room-picker button.on {
+  border-color: var(--gold-dim);
+}
+
+.edit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.readonly-meta {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 640px) {
+  .edit-sources {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+.pf-pos-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.pf-pos-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.pf-pos-row button {
+  background: var(--bg-raised);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 8px 10px;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.pf-pos-row button.on {
+  background: var(--felt-deep);
+  border-color: var(--felt);
+  color: #f4fff6;
+}
+
+.pf-pos-row button:hover {
+  border-color: var(--gold-dim);
 }

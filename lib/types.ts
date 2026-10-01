@@ -14,6 +14,16 @@ export type Source = {
   retrieved_at: string | null;
 };
 
+/** Per-field attribution: "unknown" or an explicit url/label object. */
+export type FieldSource =
+  | "unknown"
+  | {
+      url?: string | null;
+      label?: string | null;
+    };
+
+export type FieldSourcesMap = Partial<Record<string, FieldSource>>;
+
 export type Room = {
   id: number;
   slug: string;
@@ -37,6 +47,8 @@ export type Room = {
   created_at: string;
   updated_at: string;
   sources?: Source[];
+  /** Per-field source map; defaults to unknown for every editable field. */
+  field_sources?: FieldSourcesMap;
 };
 
 export type HealthResponse = {
