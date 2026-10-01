@@ -6,7 +6,6 @@ import { useTheme } from "@/components/ThemeProvider";
 import type { ThemeMode } from "@/lib/theme";
 
 const THEME_OPTIONS: { id: ThemeMode; label: string }[] = [
-  { id: "system", label: "System" },
   { id: "light", label: "Light" },
   { id: "dark", label: "Dark" },
 ];
@@ -22,7 +21,7 @@ export default function SettingsPage() {
       <section className="card" style={{ marginTop: 16 }}>
         <h2>Appearance</h2>
         <p className="meta">
-          Default follows system preference (falls back to dark). Saved as{" "}
+          Default is Light. Saved as{" "}
           <code>poker-theme</code> in localStorage.
         </p>
         <div className="theme-seg" role="radiogroup" aria-label="Theme">

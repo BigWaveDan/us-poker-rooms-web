@@ -1,24 +1,23 @@
 export const THEME_STORAGE_KEY = "poker-theme";
 
-export type ThemeMode = "light" | "dark" | "system";
+export type ThemeMode = "light" | "dark";
 
 export function readStoredTheme(): ThemeMode {
-  if (typeof window === "undefined") return "system";
+  if (typeof window === "undefined") return "light";
   try {
     const v = localStorage.getItem(THEME_STORAGE_KEY);
-    if (v === "light" || v === "dark" || v === "system") return v;
+    if (v === "light" || v === "dark") return v;
+
+    // Migrate the removed mode (and any invalid value) to the default.
+    localStorage.setItem(THEME_STORAGE_KEY, "light");
   } catch {
     /* ignore */
   }
-  return "system";
+  return "light";
 }
 
 export function resolveTheme(mode: ThemeMode): "light" | "dark" {
-  if (mode === "light" || mode === "dark") return mode;
-  if (typeof window === "undefined") return "dark";
-  return window.matchMedia("(prefers-color-scheme: light)").matches
-    ? "light"
-    : "dark";
+  return mode;
 }
 
 export function applyThemeToDocument(mode: ThemeMode): "light" | "dark" {

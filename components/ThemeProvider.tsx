@@ -16,8 +16,8 @@ type ThemeContextValue = {
 };
 
 const ThemeContext = createContext<ThemeContextValue>({
-  mode: "system",
-  resolved: "dark",
+  mode: "light",
+  resolved: "light",
   setMode: () => {},
 });
 
@@ -25,12 +25,12 @@ export function useTheme() {
   return useContext(ThemeContext);
 }
 
-/** Inline boot script — avoids flash before hydration. Default: system → dark if unknown. */
-export const THEME_BOOT_SCRIPT = `(function(){try{var k='poker-theme';var m=localStorage.getItem(k)||'system';var r=m==='light'||m==='dark'?m:(window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',r);}catch(e){document.documentElement.setAttribute('data-theme','dark');}})();`;
+/** Inline boot script — avoids flash before hydration. Unknown values, including the removed mode, use light. */
+export const THEME_BOOT_SCRIPT = `(function(){try{var k='poker-theme';var m=localStorage.getItem(k);var r=m==='dark'?'dark':'light';if(m==='system')localStorage.setItem(k,'light');document.documentElement.setAttribute('data-theme',r);}catch(e){document.documentElement.setAttribute('data-theme','light');}})();`;
 
 export default function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [mode, setModeState] = useState<ThemeMode>("system");
-  const [resolved, setResolved] = useState<"light" | "dark">("dark");
+  const [mode, setModeState] = useState<ThemeMode>("light");
+  const [resolved, setResolved] = useState<"light" | "dark">("light");
 
   useEffect(() => {
     const stored = readStoredTheme();
@@ -49,18 +49,11 @@ export default function ThemeProvider({ children }: { children: React.ReactNode 
       setModeState(next);
       setResolved(applyThemeToDocument(next));
     };
-    const mq = window.matchMedia("(prefers-color-scheme: light)");
-    const onMq = () => {
-      const next = readStoredTheme();
-      if (next === "system") setResolved(applyThemeToDocument(next));
-    };
     window.addEventListener("storage", onStorage);
     window.addEventListener("poker-theme-changed", onCustom);
-    mq.addEventListener("change", onMq);
     return () => {
       window.removeEventListener("storage", onStorage);
       window.removeEventListener("poker-theme-changed", onCustom);
-      mq.removeEventListener("change", onMq);
     };
   }, []);
 
