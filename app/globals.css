@@ -89,7 +89,7 @@ a:hover {
   align-items: center;
   gap: 8px;
   padding: 0 20px;
-  background: rgba(16, 20, 15, 0.88);
+  background: color-mix(in srgb, var(--bg-raised) 92%, transparent);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
@@ -125,23 +125,27 @@ a:hover {
 
 .nav-links {
   display: flex;
-  gap: 4px;
-  flex-wrap: wrap;
+  gap: 2px;
+  flex-wrap: nowrap;
   margin-left: auto;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .nav-links a {
   color: var(--muted);
-  padding: 8px 12px;
+  padding: 8px 10px;
   border-radius: 999px;
   font-size: 14px;
   text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .nav-links a:hover,
 .nav-links a[aria-current="page"] {
   color: var(--ink);
-  background: var(--bg-raised);
+  background: var(--bg-card);
   text-decoration: none;
 }
 
@@ -161,6 +165,22 @@ a:hover {
   font-size: 13px;
   padding: 20px;
   text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer-links {
+  margin-top: 8px;
+}
+
+.footer-links a {
+  color: var(--muted);
+}
+
+.footer-links a:hover {
+  color: var(--ink);
 }
 
 h1,
@@ -541,15 +561,20 @@ h2 {
 
 @media (max-width: 560px) {
   .topnav {
-    height: auto;
-    flex-wrap: wrap;
-    padding: 10px 12px;
-    gap: 6px;
+    height: var(--nav-h);
+    flex-wrap: nowrap;
+    padding: 0 10px;
+    gap: 4px;
   }
 
   .nav-links {
-    width: 100%;
-    margin-left: 0;
+    margin-left: auto;
+    gap: 0;
+  }
+
+  .nav-links a {
+    padding: 6px 8px;
+    font-size: 12px;
   }
 
   .filters {
@@ -557,7 +582,8 @@ h2 {
   }
 
   .brand {
-    font-size: 15px;
+    font-size: 14px;
+    margin-right: 4px;
   }
 }
 
@@ -577,10 +603,8 @@ h2 {
 }
 
 .map-wrap {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 280px);
-  gap: 12px;
-  align-items: stretch;
+  display: block;
+  width: 100%;
 }
 
 .map-canvas {
@@ -593,26 +617,6 @@ h2 {
   z-index: 0;
 }
 
-.map-pane {
-  min-height: 160px;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-}
-
-.map-pane h3 {
-  margin: 0;
-  font-size: 1.1rem;
-}
-
-@media (max-width: 860px) {
-  .map-wrap {
-    grid-template-columns: 1fr;
-  }
-  .map-pane {
-    order: -1;
-  }
-}
 
 /* —— Push / Fold (single-screen, no scroll) —— */
 .shell:has(.pf-page) {

@@ -1,5 +1,4 @@
 import Link from "next/link";
-import ApiBanner from "@/components/ApiBanner";
 import CoverageGrid from "@/components/CoverageGrid";
 import RoomsMap from "@/components/RoomsMap";
 import { fetchHealth, fetchRooms, fetchStates } from "@/lib/api";
@@ -13,7 +12,6 @@ export default async function HomePage() {
   ]);
   const roomTotal = health.data.rooms;
   const stateCount = states.data.count;
-  const live = health.live && states.live && roomsResult.live;
   const mapRooms = roomsResult.data.rooms.filter(
     (r) => r.latitude != null && r.longitude != null,
   );
@@ -23,20 +21,7 @@ export default async function HomePage() {
       <section className="hero">
         <div className="kicker">Live poker · sourced dataset</div>
         <h1>Map every sourced US poker room — and every gap.</h1>
-        <div className="chip-row">
-          <Link href="/rooms" className="btn">
-            Browse rooms
-          </Link>
-          <Link href="/about" className="btn ghost">
-            How this works
-          </Link>
-        </div>
       </section>
-
-      <ApiBanner
-        live={live}
-        error={health.error ?? states.error ?? roomsResult.error}
-      />
 
       <RoomsMap
         rooms={mapRooms}

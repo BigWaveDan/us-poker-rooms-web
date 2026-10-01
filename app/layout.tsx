@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Fraunces, Figtree } from "next/font/google";
+import Link from "next/link";
 import Nav from "@/components/Nav";
 import ThemeProvider, { THEME_BOOT_SCRIPT } from "@/components/ThemeProvider";
 import "./globals.css";
@@ -40,7 +41,10 @@ export default function RootLayout({
             <Nav />
             <main className="main">{children}</main>
             <footer className="footer">
-              Sourced dataset only. Rooms that are not in the API are not shown.
+              <p>Sourced dataset only. Rooms that are not in the API are not shown.</p>
+              <p className="footer-links">
+                <Link href="/about">About</Link>
+              </p>
             </footer>
           </div>
         </ThemeProvider>

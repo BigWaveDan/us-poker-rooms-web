@@ -16,7 +16,7 @@ Companion repos:
 
 | Route | Role |
 | --- | --- |
-| `/` (Home) | **OSM / Leaflet map** of rooms with latitude+longitude (live `GET /rooms?limit=2000`, else offline snapshot). Pin → preview pane → `/rooms/[slug]`. Coverage tiles + stats. |
+| `/` (Home) | **OSM / Leaflet map** of rooms with latitude+longitude (live `GET /rooms?limit=2000`, else offline snapshot). Coverage tiles + stats. |
 | `/rooms` | Searchable / filterable directory (live API or full `rooms-snapshot.json`). |
 | `/rooms/[slug]` | Detail: address, hours, games, phone, website, coords, **sources**. |
 | `/activity` | Placeholder collection feed |

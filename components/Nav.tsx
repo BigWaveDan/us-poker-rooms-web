@@ -8,7 +8,6 @@ const LINKS = [
   { href: "/rooms", label: "Rooms" },
   { href: "/push-fold", label: "Push/Fold" },
   { href: "/activity", label: "Activity" },
-  { href: "/about", label: "About" },
   { href: "/settings", label: "Settings" },
 ];
 
