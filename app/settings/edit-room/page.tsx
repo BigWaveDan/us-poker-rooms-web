@@ -321,8 +321,8 @@ export default function EditRoomPage() {
           {statusMsg && <p className="meta">{statusMsg}</p>}
           <p className="meta">
             Persists in localStorage key <code>poker-room-edits</code>. Rooms
-            list/map/detail merge this overlay when offline/snapshot data is
-            used.
+            list/map/detail merge this browser overlay on top of the bundled
+            snapshot (no server database write).
           </p>
         </form>
       )}
