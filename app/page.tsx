@@ -1,4 +1,3 @@
-import Link from "next/link";
 import CoverageGrid from "@/components/CoverageGrid";
 import RoomsMap from "@/components/RoomsMap";
 import { fetchHealth, fetchRooms, fetchStates } from "@/lib/api";
@@ -56,31 +55,6 @@ export default async function HomePage() {
         <CoverageGrid counts={states.data.states} />
       </section>
 
-      <section>
-        <h2>Start here</h2>
-        <div className="grid-2">
-          <article className="card">
-            <h3>Rooms</h3>
-            <p>
-              Search and filter the directory. Every detail page lists the
-              source URLs the record came from.
-            </p>
-            <p>
-              <Link href="/rooms">Open the collection →</Link>
-            </p>
-          </article>
-          <article className="card">
-            <h3>Activity</h3>
-            <p>
-              Placeholder ingest timeline and empty states for a future
-              collection log. No synthetic rooms are added here.
-            </p>
-            <p>
-              <Link href="/activity">View activity →</Link>
-            </p>
-          </article>
-        </div>
-      </section>
     </>
   );
 }
