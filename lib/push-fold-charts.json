@@ -1,0 +1,2086 @@
+{
+  "source": "PokerCoaching.com Push/Fold Charts",
+  "antes": [
+    "0%",
+    "10%",
+    "12.5%",
+    "BB"
+  ],
+  "positions": [
+    "SB",
+    "BTN",
+    "CO",
+    "HJ",
+    "LJ",
+    "UTG+2",
+    "UTG+1",
+    "UTG"
+  ],
+  "stacksBB": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "charts": {
+    "0%": {
+      "1": {
+        "SB": {
+          "pct": 100.0,
+          "range": "Any Two"
+        },
+        "BTN": {
+          "pct": 44.3,
+          "range": "33+, Ax\nK2s+, K5o+\nQ4s+, Q8o+\nJ6s+, J8o+\nT7s+, T8o+\n97s+, 87s"
+        },
+        "CO": {
+          "pct": 44.3,
+          "range": "33+, Ax\nK2s+, K5o+\nQ4s+, Q8o+\nJ6s+, J8o+\nT7s+, T8o+\n97s+, 87s"
+        },
+        "HJ": {
+          "pct": 46.0,
+          "range": "22+, Ax\nK2s+, K5o+\nQ3s+, Q8o+\nJ6s+, J8o+\nT6s+, T8o+\n97s+, 86s+\n76s"
+        },
+        "LJ": {
+          "pct": 46.3,
+          "range": "22+, Ax\nK2s+, K5o+\nQ3s+, Q8o+\nJ6s+, J8o+\nT6s+, T8o+\n96s+, 86s+\n76s"
+        },
+        "UTG+2": {
+          "pct": 46.6,
+          "range": "22+, Ax\nK2s+, K5o+\nQ3s+, Q8o+\nJ6s+, J8o+\nT6s+, T8o+\n96s+, 86s+\n76s, 65s"
+        },
+        "UTG+1": {
+          "pct": 46.9,
+          "range": "22+, Ax\nK2s+, K5o+\nQ3s+, Q8o+\nJ5s+, J8o+\nT6s+, T8o+\n96s+, 86s+\n76s, 65s"
+        },
+        "UTG": {
+          "pct": 46.9,
+          "range": "22+, Ax\nK2s+, K5o+\nQ3s+, Q8o+\nJ5s+, J8o+\nT6s+, T8o+\n96s+, 86s+\n76s, 65s"
+        }
+      },
+      "2": {
+        "SB": {
+          "pct": 89.4,
+          "range": "22+, 9x+\n82s+, 84o+\n72s+, 74o+\n62s+, 64o+\n52s+, 54o\n43s"
+        },
+        "BTN": {
+          "pct": 42.8,
+          "range": "33+, Ax+\nK2s+, K5o+\nQ4s+, Q8o+\nJ7s+, J8o+\nT7s+, T9o\n97s+"
+        },
+        "CO": {
+          "pct": 41.3,
+          "range": "33+, Ax+\nK2s+, K6o+\nQ4s+, Q8o+\nJ7s+, J9o+\nT7s+, T9o\n97s+, 87s"
+        },
+        "HJ": {
+          "pct": 42.1,
+          "range": "22+, Ax+\nK2s+, K6o+\nQ4s+, Q8o+\nJ7s+, J9o+\nT7s+, T9o\n97s+, 87s\n76s"
+        },
+        "LJ": {
+          "pct": 40.6,
+          "range": "22+, Ax+\nK2s+, K7o+\nQ4s+, Q9o+\nJ7s+, J9o+\nT7s+, T9o\n97s+, 86s+\n76s"
+        },
+        "UTG+2": {
+          "pct": 40.9,
+          "range": "22+, Ax+\nK2s+, K7o+\nQ4s+, Q9o+\nJ7s+, J9o+\nT7s+, T9o\n97s+, 86s+\n76s, 65s"
+        },
+        "UTG+1": {
+          "pct": 41.8,
+          "range": "22+, Ax+\nK2s+, K7o+\nQ4s+, Q9o+\nJ7s+, J9o+\nT7s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "UTG": {
+          "pct": 42.1,
+          "range": "22+, Ax+\nK2s+, K7o+\nQ4s+, Q9o+\nJ7s+, J9o+\nT6s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        }
+      },
+      "3": {
+        "SB": {
+          "pct": 78.6,
+          "range": "22+, Tx+\n92s+, 95o+\n84s+, 85o+\n74s+, 76o\n64s+, 54s"
+        },
+        "BTN": {
+          "pct": 42.1,
+          "range": "22+, Ax+\nK2s+, K5o+\nQ4s+, Q8o+\nJ7s+, J9o+\nT7s+, T9o\n98s"
+        },
+        "CO": {
+          "pct": 36.8,
+          "range": "33+, Ax+\nK2s+, K7o+\nQ6s+, Q9o+\nJ8s+, J9o+\nT8s+, 98s"
+        },
+        "HJ": {
+          "pct": 32.0,
+          "range": "33+, A2s+\nA3o+, K4s+\nK9o+, Q8s+\nQ9o+, J8s+\nJTo, T8s+\n98s"
+        },
+        "LJ": {
+          "pct": 29.0,
+          "range": "33+, A2s+\nA4o+, K5s+\nK9o+, Q8s+\nQTo+, J9s+\nJTo, T9s"
+        },
+        "UTG+2": {
+          "pct": 24.6,
+          "range": "44+, A2s+\nA7o+, A5o\nK6s+, KTo+\nQ8s+, QTo+\nJ9s+, T9s"
+        },
+        "UTG+1": {
+          "pct": 22.2,
+          "range": "44+, A2s+\nA7o+, K7s+\nKTo+, Q9s+\nQJo, J9s+\nT9s"
+        },
+        "UTG": {
+          "pct": 21.0,
+          "range": "44+, A2s+\nA8o+, K8s+\nKTo+, Q9s+\nQJo, J9s+\nT9s"
+        }
+      },
+      "4": {
+        "SB": {
+          "pct": 73.8,
+          "range": "22+, Jx+\nT2s+, T5o+\n93s+, 96o+\n84s+, 86o+\n74s+, 76o\n64s+, 54s"
+        },
+        "BTN": {
+          "pct": 43.0,
+          "range": "22+, Ax+\nK2s+, K4o+\nQ4s+, Q8o+\nJ7s+, J9o+\nT7s+, T9o\n98s"
+        },
+        "CO": {
+          "pct": 36.3,
+          "range": "22+, Ax+\nK2s+, K7o+\nQ6s+, Q9o+\nJ8s+, JTo\nT8s+, 98s"
+        },
+        "HJ": {
+          "pct": 31.5,
+          "range": "22+, Ax+\nK5s+, K9o+\nQ8s+, QTo+\nJ8s+, JTo\nT9s"
+        },
+        "LJ": {
+          "pct": 27.0,
+          "range": "22+, A2s+\nA4o+, K6s+\nKTo+, Q9s+\nQTo+, J9s+\nT9s"
+        },
+        "UTG+2": {
+          "pct": 23.5,
+          "range": "33+, A2s+\nA7o+, A5o\nK7s+, KTo+\nQ9s+, QJo\nJ9s+, T9s"
+        },
+        "UTG+1": {
+          "pct": 20.2,
+          "range": "33+, A2s+\nA8o+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT9s"
+        },
+        "UTG": {
+          "pct": 18.1,
+          "range": "33+, A3s+\nA9o+, K9s+\nKJo+, Q9s+\nJ9s+, T9s"
+        }
+      },
+      "5": {
+        "SB": {
+          "pct": 71.3,
+          "range": "22+, Qx+\nJ2s+, J3o+\nT2s+, T6o+\n94s+, 97o+\n84s+, 86o+\n74s+, 76o\n64s+, 53s+\n43s"
+        },
+        "BTN": {
+          "pct": 41.8,
+          "range": "22+, Ax+\nK2s+, K5o+\nQ5s+, Q9o+\nJ7s+, J9o+\nT7s+, T9o\n97s+, 87s\n76s"
+        },
+        "CO": {
+          "pct": 33.0,
+          "range": "22+, Ax+\nK4s+, K9o+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 97s+\n87s"
+        },
+        "HJ": {
+          "pct": 29.4,
+          "range": "22+, A2s+\nA3o+, K6s+\nKTo+, Q9s+\nQTo+, J9s+\nJTo, T8s+\n98s"
+        },
+        "LJ": {
+          "pct": 24.0,
+          "range": "22+, A2s+\nA7o+, A5o\nK8s+, KTo+\nQ9s+, QJo\nJ9s+, T9s\n98s"
+        },
+        "UTG+2": {
+          "pct": 20.7,
+          "range": "22+, A2s+\nA8o+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT9s"
+        },
+        "UTG+1": {
+          "pct": 18.1,
+          "range": "33+, A3s+\nA9o+, K9s+\nKJo+, Q9s+\nJ9s+, T9s"
+        },
+        "UTG": {
+          "pct": 15.7,
+          "range": "33+, A4s+\nATo+, K9s+\nKQo, QTs+\nJ9s+, T9s"
+        }
+      },
+      "6": {
+        "SB": {
+          "pct": 68.6,
+          "range": "22+, Qx+\nJ2s+, J5o+\nT2s+, T7o+\n95s+, 97o+\n84s+, 86o+\n74s+, 76o\n63s+, 53s+\n43s"
+        },
+        "BTN": {
+          "pct": 38.5,
+          "range": "22+, Ax+\nK2s+, K7o+\nQ6s+, Q9o+\nJ7s+, JTo\nT7s+, 97s+\n86s+, 76s\n65s"
+        },
+        "CO": {
+          "pct": 32.7,
+          "range": "22+, Ax+\nK5s+, K9o+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 98s\n87s, 76s"
+        },
+        "HJ": {
+          "pct": 27.0,
+          "range": "22+, A2s+\nA4o+, K7s+\nKTo+, Q9s+\nQJo, J8s+\nT8s+, 98s\n87s"
+        },
+        "LJ": {
+          "pct": 22.2,
+          "range": "22+, A2s+\nA7o+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT8s+, 98s"
+        },
+        "UTG+2": {
+          "pct": 18.9,
+          "range": "22+, A3s+\nA9o+, K9s+\nKJo+, Q9s+\nJ9s+, T9s\n98s"
+        },
+        "UTG+1": {
+          "pct": 16.0,
+          "range": "33+, A4s+\nATo+, K9s+\nKQo, Q9s+\nJ9s+, T9s"
+        },
+        "UTG": {
+          "pct": 14.3,
+          "range": "44+, A8s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, JTs\nT9s"
+        }
+      },
+      "7": {
+        "SB": {
+          "pct": 66.5,
+          "range": "22+, Qx+\nJ2s+, J7o+\nT3s+, T7o+\n95s+, 97o+\n84s+, 86o+\n74s+, 76o\n63s+, 53s+\n43s"
+        },
+        "BTN": {
+          "pct": 37.6,
+          "range": "22+, Ax+\nK2s+, K8o+\nQ6s+, QTo+\nJ7s+, JTo\nT7s+, T9o\n97s+, 86s+\n76s, 65s"
+        },
+        "CO": {
+          "pct": 31.2,
+          "range": "22+, Ax+\nK6s+, KTo+\nQ9s+, QTo+\nJ8s+, JTo\nT8s+, 97s+\n87s"
+        },
+        "HJ": {
+          "pct": 24.6,
+          "range": "22+, A2s+\nA7o+, A5o\nK9s+, KTo+\nQ9s+, QJo\nJ8s+, T8s+\n98s, 87s"
+        },
+        "LJ": {
+          "pct": 20.1,
+          "range": "22+, A3s+\nA9o+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT8s+, 98s"
+        },
+        "UTG+2": {
+          "pct": 17.2,
+          "range": "33+, A3s+\nATo+, K9s+\nKJo+, Q9s+\nJ9s+, T9s"
+        },
+        "UTG+1": {
+          "pct": 14.6,
+          "range": "44+, A8s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG": {
+          "pct": 12.7,
+          "range": "55+, A8s+\nA5s, AJo+\nK9s+, KQo\nQTs+, JTs\nT9s"
+        }
+      },
+      "8": {
+        "SB": {
+          "pct": 61.7,
+          "range": "22+, Kx+\nQ2s+, Q5o+\nJ2s+, J7o+\nT4s+, T7o+\n95s+, 97o+\n85s+, 87o\n74s+, 76o\n64s+, 53s+"
+        },
+        "BTN": {
+          "pct": 34.5,
+          "range": "22+, Ax+\nK4s+, K9o+\nQ8s+, QTo+\nJ7s+, JTo\nT7s+, 97s+\n86s+, 76s\n65s"
+        },
+        "CO": {
+          "pct": 29.1,
+          "range": "22+, A2s+\nA3o+, K7s+\nKTo+, Q8s+\nQJo, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "HJ": {
+          "pct": 22.2,
+          "range": "22+, A2s+\nA8o+, K8s+\nKJo+, Q9s+\nQJo, J8s+\nT8s+, 98s\n87s"
+        },
+        "LJ": {
+          "pct": 18.9,
+          "range": "22+, A3s+\nA9o+, K9s+\nKJo+, Q9s+\nJ9s+, T9s\n98s"
+        },
+        "UTG+2": {
+          "pct": 15.4,
+          "range": "33+, A7s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG+1": {
+          "pct": 13.4,
+          "range": "44+, A8s+\nA5s, AJo+\nK9s+, KQo\nQTs+, J9s+\nT9s"
+        },
+        "UTG": {
+          "pct": 11.5,
+          "range": "55+, A9s+\nAJo+, KTs+\nKQo, QTs+\nJTs"
+        }
+      },
+      "9": {
+        "SB": {
+          "pct": 59.9,
+          "range": "22+, Kx+\nQ2s+, Q6o+\nJ3s+, J8o+\nT4s+, T7o+\n95s+, 97o+\n85s+, 87o\n74s+, 76o\n64s+, 53s+\n43s"
+        },
+        "BTN": {
+          "pct": 34.2,
+          "range": "22+, Ax+\nK5s+, K9o+\nQ8s+, QTo+\nJ7s+, JTo\nT7s+, 97s+\n86s+, 76s\n65s"
+        },
+        "CO": {
+          "pct": 27.6,
+          "range": "22+, A2s+\nA4o+, K8s+\nKTo+, Q9s+\nQJo, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "HJ": {
+          "pct": 20.7,
+          "range": "22+, A2s+\nA9o+, K9s+\nKJo+, Q9s+\nQJo, J8s+\nT8s+, 98s"
+        },
+        "LJ": {
+          "pct": 17.2,
+          "range": "33+, A4s+\nATo+, K9s+\nKJo+, Q9s+\nJ9s+, T9s\n98s"
+        },
+        "UTG+2": {
+          "pct": 14.6,
+          "range": "44+, A8s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG+1": {
+          "pct": 11.8,
+          "range": "55+, A9s+\nAJo+, K9s+\nKQo, QTs+\nJTs"
+        },
+        "UTG": {
+          "pct": 10.9,
+          "range": "55+, A9s+\nA5s, AJo+\nKTs+, QTs+\nJTs"
+        }
+      },
+      "10": {
+        "SB": {
+          "pct": 58.4,
+          "range": "22+, Kx+\nQ2s+, Q7o+\nJ3s+, J8o+\nT4s+, T8o+\n95s+, 97o+\n84s+, 87o\n74s+, 76o\n64s+, 53s+\n43s"
+        },
+        "BTN": {
+          "pct": 33.0,
+          "range": "22+, Ax+\nK5s+, KTo+\nQ8s+, QTo+\nJ8s+, JTo\nT7s+, 97s+\n86s+, 76s\n65s"
+        },
+        "CO": {
+          "pct": 25.8,
+          "range": "22+, A2s+\nA7o+, A5o\nK8s+, KTo+\nQ9s+, QJo\nJ8s+, JTo\nT8s+, 98s\n87s"
+        },
+        "HJ": {
+          "pct": 20.1,
+          "range": "22+, A3s+\nA9o+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT8s+, 98s"
+        },
+        "LJ": {
+          "pct": 16.3,
+          "range": "33+, A7s+\nA5s, ATo+\nK9s+, KJo+\nQ9s+, J9s+\nT9s"
+        },
+        "UTG+2": {
+          "pct": 13.4,
+          "range": "44+, A8s+\nA5s, AJo+\nK9s+, KQo\nQTs+, J9s+\nT9s"
+        },
+        "UTG+1": {
+          "pct": 10.9,
+          "range": "55+, A9s+\nA5s, AJo+\nKTs+, QTs+\nJTs"
+        },
+        "UTG": {
+          "pct": 9.4,
+          "range": "88+, 66\nA9s+, A5s-A4s\nAQo+, KTs+\nQTs+, JTs"
+        }
+      },
+      "11": {
+        "SB": {
+          "pct": 54.4,
+          "range": "22+, Kx+\nQ2s+, Q8o+\nJ4s+, J8o+\nT5s+, T8o+\n95s+, 98o\n85s+, 87o\n74s+, 64s+\n53s+"
+        },
+        "BTN": {
+          "pct": 32.1,
+          "range": "22+, Ax+\nK6s+, KTo+\nQ8s+, QTo+\nJ8s+, JTo\nT7s+, 97s+\n87s, 76s"
+        },
+        "CO": {
+          "pct": 23.1,
+          "range": "22+, A2s+\nA8o+, K8s+\nKJo+, Q9s+\nQJo, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "HJ": {
+          "pct": 18.7,
+          "range": "33+, A3s+\nATo+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT8s+, 98s"
+        },
+        "LJ": {
+          "pct": 14.6,
+          "range": "44+, A8s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG+2": {
+          "pct": 12.1,
+          "range": "55+, A9s+\nA5s, AJo+\nK9s+, KQo\nQTs+, JTs"
+        },
+        "UTG+1": {
+          "pct": 10.9,
+          "range": "55+, A9s+\nA5s, AJo+\nKTs+, QTs+\nJTs"
+        },
+        "UTG": {
+          "pct": 9.0,
+          "range": "88+, 66\nATs+, A5s-A3s\nAQo+, KTs+\nQTs+"
+        }
+      },
+      "12": {
+        "SB": {
+          "pct": 53.2,
+          "range": "22+, Ax+\nK2s+, K3o+\nQ2s+, Q8o+\nJ4s+, J8o+\nT6s+, T8o+\n95s+, 98o\n85s+, 87o\n74s+, 64s+\n53s+"
+        },
+        "BTN": {
+          "pct": 32.1,
+          "range": "22+, Ax+\nK6s+, KTo+\nQ8s+, QTo+\nJ8s+, JTo\nT7s+, 97s+\n87s, 76s"
+        },
+        "CO": {
+          "pct": 23.1,
+          "range": "22+, A2s+\nA8o+, K8s+\nKJo+, Q8s+\nQJo, J8s+\nJTo, T8s+\n98s"
+        },
+        "HJ": {
+          "pct": 16.6,
+          "range": "33+, A7s+\nA5s-A4s, ATo+\nK9s+, KJo+\nQ9s+, J9s+\nT9s"
+        },
+        "LJ": {
+          "pct": 13.7,
+          "range": "44+, A8s+\nA5s, AJo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG+2": {
+          "pct": 10.9,
+          "range": "55+, A9s+\nA5s, AJo+\nKTs+, QTs+\nJTs"
+        },
+        "UTG+1": {
+          "pct": 9.4,
+          "range": "88+, 66\nA9s+, A5s-A4s\nAQo+, KTs+\nQTs+, JTs"
+        },
+        "UTG": {
+          "pct": 7.5,
+          "range": "99+, ATs+\nA5s-A3s, AQo+\nKJs+, QJs"
+        }
+      },
+      "13": {
+        "SB": {
+          "pct": 51.7,
+          "range": "22+, Ax+\nK2s+, K4o+\nQ3s+, Q8o+\nJ4s+, J8o+\nT6s+, T8o+\n95s+, 98o\n85s+, 87o\n74s+, 64s+\n54s"
+        },
+        "BTN": {
+          "pct": 30.9,
+          "range": "22+, A2s+\nA3o+, K6s+\nKTo+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n97s+, 87s\n76s"
+        },
+        "CO": {
+          "pct": 21.3,
+          "range": "22+, A2s+\nA9o+, K8s+\nKJo+, Q8s+\nQJo, J8s+\nT8s+, 98s"
+        },
+        "HJ": {
+          "pct": 16.0,
+          "range": "33+, A8s+\nA5s, ATo+\nK9s+, KJo+\nQ9s+, J9s+\nT9s"
+        },
+        "LJ": {
+          "pct": 12.4,
+          "range": "55+, A9s+\nA5s, AJo+\nK9s+, KQo\nQTs+, JTs\nT9s"
+        },
+        "UTG+2": {
+          "pct": 10.4,
+          "range": "88+, 66-55\nA9s+, A5s\nAJo+, KTs+\nQTs+, JTs"
+        },
+        "UTG+1": {
+          "pct": 9.0,
+          "range": "88+, 66\nATs+, A5s-A3s\nAQo+, KTs+\nQTs+"
+        },
+        "UTG": {
+          "pct": 7.5,
+          "range": "TT+, 66\nATs+, A5s-A3s\nAQo+, KJs+\nQJs"
+        }
+      },
+      "14": {
+        "SB": {
+          "pct": 48.1,
+          "range": "22+, Ax+\nK2s+, K5o+\nQ4s+, Q9o+\nJ5s+, J9o+\nT6s+, T8o+\n95s+, 98o\n85s+, 87o\n75s+, 64s+\n54s"
+        },
+        "BTN": {
+          "pct": 28.8,
+          "range": "22+, A2s+\nA4o+, K8s+\nKTo+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "CO": {
+          "pct": 20.1,
+          "range": "22+, A2s+\nATo+, K8s+\nKJo+, Q9s+\nQJo, J8s+\nT8s+, 98s"
+        },
+        "HJ": {
+          "pct": 16.0,
+          "range": "33+, A8s+\nA5s, ATo+\nK9s+, KJo+\nQ9s+, J9s+\nT9s"
+        },
+        "LJ": {
+          "pct": 12.1,
+          "range": "55+, A9s+\nA5s, AJo+\nK9s+, KQo\nQTs+, JTs"
+        },
+        "UTG+2": {
+          "pct": 9.4,
+          "range": "88+, 66\nA9s+, A5s-A4s\nAQo+, KTs+\nQTs+, JTs"
+        },
+        "UTG+1": {
+          "pct": 7.8,
+          "range": "99+, ATs+\nA5s-A3s, AQo+\nKTs+, QJs"
+        },
+        "UTG": {
+          "pct": 7.2,
+          "range": "TT+, 66\nATs+, A5s-A3s\nAQo+, KJs+"
+        }
+      },
+      "15": {
+        "SB": {
+          "pct": 45.7,
+          "range": "22+, Ax+\nK2s+, K6o+\nQ4s+, Q9o+\nJ6s+, J9o+\nT6s+, T8o+\n96s+, 98o\n85s+, 75s+\n64s+, 54s"
+        },
+        "BTN": {
+          "pct": 28.2,
+          "range": "22+, A2s+\nA5o+, K7s+\nKTo+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "CO": {
+          "pct": 18.9,
+          "range": "22+, A3s+\nATo+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT9s, 98s"
+        },
+        "HJ": {
+          "pct": 13.7,
+          "range": "44+, A8s+\nA5s, AJo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "LJ": {
+          "pct": 10.9,
+          "range": "55+, A9s+\nA5s, AJo+\nKTs+, QTs+\nJTs"
+        },
+        "UTG+2": {
+          "pct": 9.0,
+          "range": "88+, 66\nATs+, A5s-A3s\nAQo+, KTs+\nQTs+"
+        },
+        "UTG+1": {
+          "pct": 7.5,
+          "range": "TT+, 66\nATs+, A5s-A3s\nAQo+, KJs+\nQJs"
+        },
+        "UTG": {
+          "pct": 6.8,
+          "range": "TT+, ATs+\nA7s, A5s-A3s\nAQo+, KQs"
+        }
+      }
+    },
+    "10%": {
+      "1": {
+        "SB": {
+          "pct": 100.0,
+          "range": "Any Two"
+        },
+        "BTN": {
+          "pct": 81.3,
+          "range": "22+, Jx+\nT2s+, T3o+\n92s+, 95o+\n82s+, 85o+\n73s+, 75o+\n63s+, 65o\n53s+, 43s"
+        },
+        "CO": {
+          "pct": 90.0,
+          "range": "22+, Tx+\n92s+, 93o+\n82s+, 84o+\n72s+, 74o+\n62s+, 64o+\n52s+, 53o+\n42s+, 32s"
+        },
+        "HJ": {
+          "pct": 91.9,
+          "range": "22+, 9x+\n82s+, 84o+\n72s+, 74o+\n62s+, 63o+\n52s+, 53o+\n42s+, 32s"
+        },
+        "LJ": {
+          "pct": 91.9,
+          "range": "22+, 9x+\n82s+, 84o+\n72s+, 74o+\n62s+, 63o+\n52s+, 53o+\n42s+, 32s"
+        },
+        "UTG+2": {
+          "pct": 91.9,
+          "range": "22+, 9x+\n82s+, 84o+\n72s+, 74o+\n62s+, 63o+\n52s+, 53o+\n42s+, 32s"
+        },
+        "UTG+1": {
+          "pct": 91.9,
+          "range": "22+, 9x+\n82s+, 84o+\n72s+, 74o+\n62s+, 63o+\n52s+, 53o+\n42s+, 32s"
+        },
+        "UTG": {
+          "pct": 91.9,
+          "range": "22+, 9x+\n82s+, 84o+\n72s+, 74o+\n62s+, 63o+\n52s+, 53o+\n42s+, 32s"
+        }
+      },
+      "2": {
+        "SB": {
+          "pct": 100.0,
+          "range": "Any Two"
+        },
+        "BTN": {
+          "pct": 63.5,
+          "range": "22+, Kx+\nQ2s+, Q3o+\nJ2s+, J5o+\nT3s+, T7o+\n95s+, 97o+\n85s+, 87o\n75s+, 65s"
+        },
+        "CO": {
+          "pct": 72.2,
+          "range": "22+, Qx+\nJ2s+, J4o+\nT2s+, T6o+\n92s+, 96o+\n84s+, 86o+\n74s+, 76o\n63s+, 53s+\n43s"
+        },
+        "HJ": {
+          "pct": 82.2,
+          "range": "22+, Jx+\nT2s+, T4o+\n92s+, 95o+\n82s+, 85o+\n73s+, 75o+\n62s+, 65o\n52s+, 54o\n42s+"
+        },
+        "LJ": {
+          "pct": 82.8,
+          "range": "22+, Jx+\nT2s+, T4o+\n92s+, 95o+\n82s+, 85o+\n72s+, 75o+\n62s+, 65o\n52s+, 54o\n42s+, 32s"
+        },
+        "UTG+2": {
+          "pct": 83.7,
+          "range": "22+, Jx+\nT2s+, T4o+\n92s+, 95o+\n82s+, 85o+\n72s+, 75o+\n62s+, 64o+\n52s+, 54o\n42s+, 32s"
+        },
+        "UTG+1": {
+          "pct": 83.7,
+          "range": "22+, Jx+\nT2s+, T4o+\n92s+, 95o+\n82s+, 85o+\n72s+, 75o+\n62s+, 64o+\n52s+, 54o\n42s+, 32s"
+        },
+        "UTG": {
+          "pct": 83.7,
+          "range": "22+, Jx+\nT2s+, T4o+\n92s+, 95o+\n82s+, 85o+\n72s+, 75o+\n62s+, 64o+\n52s+, 54o\n42s+, 32s"
+        }
+      },
+      "3": {
+        "SB": {
+          "pct": 93.4,
+          "range": "22+, 8x+\n72s+, 73o+\n62s+, 64o+\n52s+, 53o+\n42s+"
+        },
+        "BTN": {
+          "pct": 56.9,
+          "range": "22+, Kx+\nQ2s+, Q4o+\nJ3s+, J7o+\nT5s+, T7o+\n96s+, 98o\n86s+, 76s"
+        },
+        "CO": {
+          "pct": 52.0,
+          "range": "22+, Ax\nK2s+, K3o+\nQ2s+, Q6o+\nJ4s+, J8o+\nT6s+, T8o+\n96s+, 98o\n86s+, 76s\n65s"
+        },
+        "HJ": {
+          "pct": 49.9,
+          "range": "22+, Ax\nK2s+, K4o+\nQ2s+, Q8o+\nJ4s+, J8o+\nT6s+, T8o+\n96s+, 98o\n86s+, 75s+\n65s, 54s"
+        },
+        "LJ": {
+          "pct": 49.0,
+          "range": "22+, Ax\nK2s+, K5o+\nQ2s+, Q8o+\nJ4s+, J8o+\nT6s+, T8o+\n96s+, 98o\n86s+, 75s+\n65s, 54s"
+        },
+        "UTG+2": {
+          "pct": 48.1,
+          "range": "22+, Ax\nK2s+, K6o+\nQ3s+, Q8o+\nJ5s+, J8o+\nT6s+, T8o+\n96s+, 98o\n85s+, 75s+\n64s+, 54s"
+        },
+        "UTG+1": {
+          "pct": 48.1,
+          "range": "22+, Ax\nK2s+, K6o+\nQ3s+, Q8o+\nJ5s+, J8o+\nT6s+, T8o+\n96s+, 98o\n85s+, 75s+\n64s+, 54s"
+        },
+        "UTG": {
+          "pct": 47.2,
+          "range": "22+, Ax\nK2s+, K6o+\nQ3s+, Q8o+\nJ5s+, J9o+\nT6s+, T8o+\n96s+, 98o\n85s+, 75s+\n64s+, 54s"
+        }
+      },
+      "4": {
+        "SB": {
+          "pct": 84.9,
+          "range": "22+, Tx+\n92s+, 93o+\n82s+, 84o+\n73s+, 75o+\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 54.4,
+          "range": "22+, Kx+\nQ2s+, Q5o+\nJ4s+, J7o+\nT6s+, T8o+\n96s+, 98o\n86s+, 76s"
+        },
+        "CO": {
+          "pct": 45.1,
+          "range": "22+, Ax\nK2s+, K5o+\nQ3s+, Q8o+\nJ5s+, J8o+\nT6s+, T9o\n97s+, 87s\n76s"
+        },
+        "HJ": {
+          "pct": 40.9,
+          "range": "22+, Ax\nK2s+, K6o+\nQ5s+, Q9o+\nJ7s+, J9o+\nT7s+, T9o\n97s+, 87s\n76s"
+        },
+        "LJ": {
+          "pct": 36.0,
+          "range": "22+, Ax\nK3s+, K8o+\nQ6s+, Q9o+\nJ7s+, JTo\nT8s+, 97s+\n87s"
+        },
+        "UTG+2": {
+          "pct": 31.8,
+          "range": "22+, A2s+\nA3o+, K4s+\nK9o+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "UTG+1": {
+          "pct": 29.3,
+          "range": "33+, A2s+\nA5o+, K5s+\nK9o+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "UTG": {
+          "pct": 25.6,
+          "range": "33+, A2s+\nA7o+, A5o\nK6s+, KTo+\nQ8s+, QTo+\nJ9s+, T8s+\n98s"
+        }
+      },
+      "5": {
+        "SB": {
+          "pct": 81.9,
+          "range": "22+, Tx+\n92s+, 95o+\n83s+, 85o+\n73s+, 75o+\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 51.4,
+          "range": "22+, Kx+\nQ2s+, Q6o+\nJ5s+, J8o+\nT6s+, T8o+\n96s+, 86s+\n76s"
+        },
+        "CO": {
+          "pct": 43.0,
+          "range": "22+, Ax\nK2s+, K5o+\nQ4s+, Q8o+\nJ7s+, J9o+\nT7s+, T9o\n97s+, 87s\n76s"
+        },
+        "HJ": {
+          "pct": 36.3,
+          "range": "22+, Ax\nK2s+, K8o+\nQ6s+, Q9o+\nJ7s+, JTo\nT8s+, 97s+\n87s"
+        },
+        "LJ": {
+          "pct": 32.7,
+          "range": "22+, Ax\nK4s+, K9o+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 98s\n87s"
+        },
+        "UTG+2": {
+          "pct": 28.8,
+          "range": "22+, A2s+\nA4o+, K6s+\nKTo+, Q8s+\nQTo+, J9s+\nJTo, T8s+\n98s"
+        },
+        "UTG+1": {
+          "pct": 24.6,
+          "range": "22+, A2s+\nA7o+, A5o\nK7s+, KTo+\nQ9s+, QJo\nJ9s+, T8s+\n98s"
+        },
+        "UTG": {
+          "pct": 22.6,
+          "range": "33+, A2s+\nA7o+, K8s+\nKTo+, Q9s+\nQJo, J9s+\nT9s, 98s"
+        }
+      },
+      "6": {
+        "SB": {
+          "pct": 78.9,
+          "range": "22+, Jx+\nT2s+, T4o+\n92s+, 95o+\n84s+, 86o+\n73s+, 75o+\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 49.9,
+          "range": "22+, Kx+\nQ2s+, Q7o+\nJ5s+, J8o+\nT6s+, T9o\n96s+, 86s+\n76s, 65s"
+        },
+        "CO": {
+          "pct": 41.2,
+          "range": "22+, Ax\nK2s+, K6o+\nQ5s+, Q9o+\nJ7s+, J9o+\nT7s+, T9o\n97s+, 86s+\n76s"
+        },
+        "HJ": {
+          "pct": 33.6,
+          "range": "22+, Ax\nK3s+, K9o+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 97s+\n87s, 76s"
+        },
+        "LJ": {
+          "pct": 30.6,
+          "range": "22+, A2s+\nA3o+, K5s+\nKTo+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "UTG+2": {
+          "pct": 25.8,
+          "range": "22+, A2s+\nA5o+, K7s+\nKTo+, Q9s+\nQJo, J9s+\nT8s+, 98s\n87s"
+        },
+        "UTG+1": {
+          "pct": 23.4,
+          "range": "22+, A2s+\nA7o+, K8s+\nKTo+, Q9s+\nQJo, J9s+\nT8s+, 98s"
+        },
+        "UTG": {
+          "pct": 20.1,
+          "range": "22+, A2s+\nA8o+, K9s+\nKJo+, Q9s+\nJ9s+, T9s\n98s"
+        }
+      },
+      "7": {
+        "SB": {
+          "pct": 76.2,
+          "range": "22+, Jx+\nT2s+, T5o+\n92s+, 96o+\n84s+, 86o+\n73s+, 76o\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 47.2,
+          "range": "22+, Ax\nK2s+, K3o+\nQ3s+, Q8o+\nJ6s+, J9o+\nT6s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 38.5,
+          "range": "22+, Ax\nK2s+, K7o+\nQ6s+, Q9o+\nJ7s+, JTo\nT7s+, 97s+\n86s+, 76s\n65s"
+        },
+        "HJ": {
+          "pct": 33.0,
+          "range": "22+, Ax\nK5s+, K9o+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 97s+\n87s, 76s"
+        },
+        "LJ": {
+          "pct": 28.2,
+          "range": "22+, A2s+\nA4o+, K6s+\nKTo+, Q9s+\nQTo+, J8s+\nT8s+, 98s\n87s"
+        },
+        "UTG+2": {
+          "pct": 24.6,
+          "range": "22+, A2s+\nA7o+, A5o\nK8s+, KTo+\nQ9s+, QJo\nJ9s+, T8s+\n98s, 87s"
+        },
+        "UTG+1": {
+          "pct": 21.3,
+          "range": "22+, A2s+\nA8o+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT8s+, 98s"
+        },
+        "UTG": {
+          "pct": 18.4,
+          "range": "33+, A3s+\nA9o+, K9s+\nKJo+, Q9s+\nJ9s+, T9s\n98s"
+        }
+      },
+      "8": {
+        "SB": {
+          "pct": 74.1,
+          "range": "22+, Qx+\nJ2s+, J3o+\nT2s+, T6o+\n93s+, 96o+\n84s+, 86o+\n73s+, 76o\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 46.0,
+          "range": "22+, Ax\nK2s+, K4o+\nQ3s+, Q8o+\nJ7s+, J9o+\nT6s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 35.4,
+          "range": "22+, Ax\nK3s+, K9o+\nQ6s+, QTo+\nJ7s+, JTo\nT7s+, 97s+\n86s+, 76s\n65s"
+        },
+        "HJ": {
+          "pct": 31.5,
+          "range": "22+, Ax\nK6s+, KTo+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 98s\n87s, 76s"
+        },
+        "LJ": {
+          "pct": 26.1,
+          "range": "22+, A2s+\nA5o+, K7s+\nKTo+, Q9s+\nQJo, J8s+\nT8s+, 98s\n87s"
+        },
+        "UTG+2": {
+          "pct": 21.6,
+          "range": "22+, A2s+\nA8o+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT8s+, 98s\n87s"
+        },
+        "UTG+1": {
+          "pct": 19.2,
+          "range": "22+, A3s+\nA9o+, K9s+\nKJo+, Q9s+\nJ9s+, T8s+\n98s"
+        },
+        "UTG": {
+          "pct": 16.9,
+          "range": "33+, A4s+\nATo+, K9s+\nKJo+, Q9s+\nJ9s+, T9s"
+        }
+      },
+      "9": {
+        "SB": {
+          "pct": 71.9,
+          "range": "22+, Qx+\nJ2s+, J5o+\nT2s+, T6o+\n93s+, 96o+\n84s+, 86o+\n74s+, 76o\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 43.9,
+          "range": "22+, Ax\nK2s+, K5o+\nQ4s+, Q9o+\nJ7s+, J9o+\nT6s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 34.2,
+          "range": "22+, Ax\nK4s+, K9o+\nQ8s+, QTo+\nJ8s+, JTo\nT7s+, 97s+\n86s+, 76s\n65s"
+        },
+        "HJ": {
+          "pct": 30.0,
+          "range": "22+, A2s+\nA3o+, K7s+\nKTo+, Q9s+\nQTo+, J8s+\nJTo, T8s+\n98s, 87s\n76s"
+        },
+        "LJ": {
+          "pct": 24.9,
+          "range": "22+, A2s+\nA7o+, A5o\nK8s+, KTo+\nQ9s+, QJo\nJ8s+, T8s+\n98s, 87s"
+        },
+        "UTG+2": {
+          "pct": 20.4,
+          "range": "22+, A2s+\nA9o+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT8s+, 98s"
+        },
+        "UTG+1": {
+          "pct": 17.5,
+          "range": "33+, A3s+\nATo+, K9s+\nKJo+, Q9s+\nJ9s+, T9s\n98s"
+        },
+        "UTG": {
+          "pct": 15.7,
+          "range": "33+, A7s+\nA5s-A4s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        }
+      },
+      "10": {
+        "SB": {
+          "pct": 71.0,
+          "range": "22+, Qx+\nJ2s+, J5o+\nT2s+, T7o+\n93s+, 96o+\n84s+, 86o+\n74s+, 76o\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 42.4,
+          "range": "22+, Ax\nK2s+, K6o+\nQ5s+, Q9o+\nJ7s+, J9o+\nT7s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 32.7,
+          "range": "22+, Ax\nK5s+, KTo+\nQ8s+, QTo+\nJ8s+, JTo\nT7s+, 97s+\n86s+, 76s"
+        },
+        "HJ": {
+          "pct": 28.2,
+          "range": "22+, A2s+\nA4o+, K7s+\nKTo+, Q8s+\nQJo, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "LJ": {
+          "pct": 22.2,
+          "range": "22+, A2s+\nA8o+, K8s+\nKJo+, Q9s+\nQJo, J8s+\nT8s+, 98s\n87s"
+        },
+        "UTG+2": {
+          "pct": 20.1,
+          "range": "22+, A3s+\nA9o+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT8s+, 98s"
+        },
+        "UTG+1": {
+          "pct": 16.6,
+          "range": "33+, A7s+\nA5s-A4s, ATo+\nK9s+, KJo+\nQ9s+, J9s+\nT9s"
+        },
+        "UTG": {
+          "pct": 14.3,
+          "range": "44+, A8s+\nATo+, K9s+\nKQo, Q9s+\nJ9s+, T9s"
+        }
+      },
+      "11": {
+        "SB": {
+          "pct": 67.7,
+          "range": "22+, Qx+\nJ2s+, J7o+\nT3s+, T7o+\n94s+, 97o+\n84s+, 86o+\n74s+, 76o\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 39.7,
+          "range": "22+, Ax\nK2s+, K8o+\nQ5s+, Q9o+\nJ7s+, JTo\nT7s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 32.7,
+          "range": "22+, Ax\nK5s+, KTo+\nQ8s+, QTo+\nJ8s+, JTo\nT7s+, 97s+\n86s+, 76s"
+        },
+        "HJ": {
+          "pct": 25.8,
+          "range": "22+, A2s+\nA7o+, A5o\nK8s+, KTo+\nQ9s+, QJo\nJ8s+, JTo\nT8s+, 98s\n87s"
+        },
+        "LJ": {
+          "pct": 21.0,
+          "range": "22+, A2s+\nA9o+, K8s+\nKJo+, Q9s+\nQJo, J8s+\nT8s+, 98s"
+        },
+        "UTG+2": {
+          "pct": 17.5,
+          "range": "33+, A3s+\nATo+, K9s+\nKJo+, Q9s+\nJ9s+, T9s\n98s"
+        },
+        "UTG+1": {
+          "pct": 15.1,
+          "range": "33+, A8s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG": {
+          "pct": 13.4,
+          "range": "44+, A8s+\nA5s, AJo+\nK9s+, KQo\nQTs+, J9s+\nT9s"
+        }
+      },
+      "12": {
+        "SB": {
+          "pct": 65.6,
+          "range": "22+, Kx+\nQ2s+, Q4o+\nJ2s+, J7o+\nT3s+, T7o+\n95s+, 97o+\n84s+, 86o+\n74s+, 76o\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 37.6,
+          "range": "22+, Ax\nK2s+, K9o+\nQ6s+, QTo+\nJ7s+, JTo\nT7s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 31.8,
+          "range": "22+, Ax\nK6s+, KTo+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 97s+\n87s, 76s"
+        },
+        "HJ": {
+          "pct": 24.9,
+          "range": "22+, A2s+\nA7o+, A5o\nK8s+, KJo+\nQ9s+, QJo\nJ8s+, JTo\nT8s+, 98s\n87s"
+        },
+        "LJ": {
+          "pct": 20.4,
+          "range": "22+, A3s+\nA9o+, K9s+\nKJo+, Q9s+\nQJo, J8s+\nT8s+, 98s"
+        },
+        "UTG+2": {
+          "pct": 16.9,
+          "range": "33+, A7s+\nA5s-A4s, ATo+\nK9s+, KJo+\nQ9s+, J9s+\nT9s, 98s"
+        },
+        "UTG+1": {
+          "pct": 14.6,
+          "range": "44+, A8s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG": {
+          "pct": 12.7,
+          "range": "55+, A8s+\nA5s, AJo+\nK9s+, KQo\nQTs+, JTs\nT9s"
+        }
+      },
+      "13": {
+        "SB": {
+          "pct": 64.7,
+          "range": "22+, Kx+\nQ2s+, Q4o+\nJ2s+, J7o+\nT3s+, T7o+\n95s+, 97o+\n84s+, 86o+\n74s+, 76o\n63s+, 53s+\n43s"
+        },
+        "BTN": {
+          "pct": 36.3,
+          "range": "22+, Ax\nK4s+, K9o+\nQ6s+, QTo+\nJ7s+, JTo\nT7s+, T9o\n96s+, 86s+\n76s, 65s"
+        },
+        "CO": {
+          "pct": 29.7,
+          "range": "22+, A2s+\nA4o+, K7s+\nKTo+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n97s+, 87s\n76s"
+        },
+        "HJ": {
+          "pct": 23.1,
+          "range": "22+, A2s+\nA8o+, K8s+\nKJo+, Q9s+\nQJo, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "LJ": {
+          "pct": 18.3,
+          "range": "22+, A3s+\nATo+, K9s+\nKJo+, Q9s+\nJ9s+, T8s+\n98s"
+        },
+        "UTG+2": {
+          "pct": 15.4,
+          "range": "33+, A7s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG+1": {
+          "pct": 13.7,
+          "range": "44+, A8s+\nA5s, AJo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG": {
+          "pct": 11.8,
+          "range": "55+, A9s+\nA5s, AJo+\nKTs+, KQo\nQTs+, JTs"
+        }
+      },
+      "14": {
+        "SB": {
+          "pct": 61.7,
+          "range": "22+, Kx+\nQ2s+, Q5o+\nJ2s+, J8o+\nT4s+, T7o+\n95s+, 97o+\n84s+, 87o\n74s+, 76o\n63s+, 53s+\n43s"
+        },
+        "BTN": {
+          "pct": 36.7,
+          "range": "22+, Ax\nK4s+, K9o+\nQ6s+, QTo+\nJ7s+, JTo\nT7s+, T9o\n96s+, 86s+\n75s+, 65s"
+        },
+        "CO": {
+          "pct": 29.4,
+          "range": "22+, A2s+\nA4o+, K7s+\nKTo+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n97s+, 87s"
+        },
+        "HJ": {
+          "pct": 21.3,
+          "range": "22+, A2s+\nA9o+, K8s+\nKJo+, Q9s+\nQJo, J8s+\nT8s+, 98s\n87s"
+        },
+        "LJ": {
+          "pct": 18.4,
+          "range": "33+, A3s+\nATo+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT9s, 98s"
+        },
+        "UTG+2": {
+          "pct": 14.6,
+          "range": "44+, A8s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG+1": {
+          "pct": 12.8,
+          "range": "44+, A9s+\nA5s, AJo+\nK9s+, KQo\nQTs+, JTs\nT9s"
+        },
+        "UTG": {
+          "pct": 10.9,
+          "range": "55+, A9s+\nA5s, AJo+\nKTs+, QTs+\nJTs"
+        }
+      },
+      "15": {
+        "SB": {
+          "pct": 60.2,
+          "range": "22+, Kx+\nQ2s+, Q6o+\nJ3s+, J8o+\nT4s+, T7o+\n95s+, 97o+\n84s+, 87o\n74s+, 76o\n64s+, 53s+\n43s"
+        },
+        "BTN": {
+          "pct": 36.0,
+          "range": "22+, Ax\nK4s+, K9o+\nQ8s+, Q6s\nQTo+, J7s+\nJTo, T7s+\nT9o, 96s+\n86s+, 76s\n65s"
+        },
+        "CO": {
+          "pct": 27.9,
+          "range": "22+, A2s+\nA5o+, K8s+\nKTo+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "HJ": {
+          "pct": 21.3,
+          "range": "22+, A2s+\nA9o+, K8s+\nKJo+, Q8s+\nQJo, J8s+\nT8s+, 98s"
+        },
+        "LJ": {
+          "pct": 16.6,
+          "range": "33+, A7s+\nA5s-A4s, ATo+\nK9s+, KJo+\nQ9s+, J9s+\nT9s"
+        },
+        "UTG+2": {
+          "pct": 13.7,
+          "range": "44+, A8s+\nA5s, AJo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG+1": {
+          "pct": 11.8,
+          "range": "55+, A9s+\nA5s, AJo+\nKTs+, KQo\nQTs+, JTs"
+        },
+        "UTG": {
+          "pct": 9.8,
+          "range": "66+, A9s+\nA5s-A4s, AQo+\nKTs+, QTs+\nJTs"
+        }
+      }
+    },
+    "12.5%": {
+      "1": {
+        "SB": {
+          "pct": 100.0,
+          "range": "Any Two"
+        },
+        "BTN": {
+          "pct": 87.9,
+          "range": "22+, Tx+\n92s+, 94o+\n82s+, 84o+\n72s+, 74o+\n62s+, 64o+\n52s+, 54o\n42s+"
+        },
+        "CO": {
+          "pct": 95.5,
+          "range": "22+, 8x+\n72s+, 73o+\n62s+, 63o+\n52s+, 53o+\n42s+, 43o\n32s"
+        },
+        "HJ": {
+          "pct": 98.2,
+          "range": "22+, 8x+\n72s+, 73o+\n62s+, 63o+\n5x, 42s+\n43o, 32s"
+        },
+        "LJ": {
+          "pct": 98.2,
+          "range": "22+, 8x+\n72s+, 73o+\n62s+, 63o+\n5x, 42s+\n43o, 32s"
+        },
+        "UTG+2": {
+          "pct": 98.2,
+          "range": "22+, 8x+\n72s+, 73o+\n62s+, 63o+\n5x, 42s+\n43o, 32s"
+        },
+        "UTG+1": {
+          "pct": 98.2,
+          "range": "22+, 8x+\n72s+, 73o+\n62s+, 63o+\n5x, 42s+\n43o, 32s"
+        },
+        "UTG": {
+          "pct": 98.2,
+          "range": "22+, 8x+\n72s+, 73o+\n62s+, 63o+\n5x, 42s+\n43o, 32s"
+        }
+      },
+      "2": {
+        "SB": {
+          "pct": 100.0,
+          "range": "Any Two"
+        },
+        "BTN": {
+          "pct": 68.9,
+          "range": "22+, Qx+\nJ2s+, J5o+\nT2s+, T6o+\n95s+, 96o+\n85s+, 86o+\n75s+, 76o\n64s+, 54s"
+        },
+        "CO": {
+          "pct": 80.7,
+          "range": "22+, Jx+\nT2s+, T4o+\n92s+, 95o+\n82s+, 85o+\n73s+, 75o+\n63s+, 65o\n52s+, 43s"
+        },
+        "HJ": {
+          "pct": 84.6,
+          "range": "22+, Jx+\nT2s+, T3o+\n92s+, 95o+\n82s+, 85o+\n72s+, 75o+\n62s+, 64o+\n52s+, 54o\n42s+, 32s"
+        },
+        "LJ": {
+          "pct": 85.5,
+          "range": "22+, Jx+\nT2s+, T3o+\n92s+, 95o+\n82s+, 85o+\n72s+, 74o+\n62s+, 64o+\n52s+, 54o\n42s+, 32s"
+        },
+        "UTG+2": {
+          "pct": 85.5,
+          "range": "22+, Jx+\nT2s+, T3o+\n92s+, 95o+\n82s+, 85o+\n72s+, 74o+\n62s+, 64o+\n52s+, 54o\n42s+, 32s"
+        },
+        "UTG+1": {
+          "pct": 85.5,
+          "range": "22+, Jx+\nT2s+, T3o+\n92s+, 95o+\n82s+, 85o+\n72s+, 74o+\n62s+, 64o+\n52s+, 54o\n42s+, 32s"
+        },
+        "UTG": {
+          "pct": 85.5,
+          "range": "22+, Jx+\nT2s+, T3o+\n92s+, 95o+\n82s+, 85o+\n72s+, 74o+\n62s+, 64o+\n52s+, 54o\n42s+, 32s"
+        }
+      },
+      "3": {
+        "SB": {
+          "pct": 94.6,
+          "range": "22+, 8x+\n72s+, 73o+\n62s+, 63o+\n52s+, 53o+\n42s+, 32s"
+        },
+        "BTN": {
+          "pct": 60.5,
+          "range": "22+, Kx+\nQ2s+, Q4o+\nJ2s+, J7o+\nT4s+, T7o+\n95s+, 97o+\n85s+, 87o\n75s+, 65s"
+        },
+        "CO": {
+          "pct": 59.3,
+          "range": "22+, Kx+\nQ2s+, Q5o+\nJ3s+, J7o+\nT5s+, T7o+\n95s+, 97o+\n85s+, 87o\n75s+, 65s\n54s"
+        },
+        "HJ": {
+          "pct": 53.5,
+          "range": "22+, Ax+\nK2s+, K3o+\nQ2s+, Q6o+\nJ3s+, J8o+\nT5s+, T8o+\n96s+, 98o\n85s+, 75s+\n65s, 54s"
+        },
+        "LJ": {
+          "pct": 51.7,
+          "range": "22+, Ax+\nK2s+, K4o+\nQ2s+, Q7o+\nJ3s+, J8o+\nT6s+, T8o+\n96s+, 98o\n85s+, 75s+\n64s+, 54s"
+        },
+        "UTG+2": {
+          "pct": 51.4,
+          "range": "22+, Ax+\nK2s+, K4o+\nQ2s+, Q8o+\nJ3s+, J8o+\nT6s+, T8o+\n96s+, 98o\n85s+, 74s+\n64s+, 53s+"
+        },
+        "UTG+1": {
+          "pct": 50.8,
+          "range": "22+, Ax+\nK2s+, K5o+\nQ2s+, Q8o+\nJ3s+, J8o+\nT6s+, T8o+\n95s+, 98o\n85s+, 74s+\n64s+, 53s+"
+        },
+        "UTG": {
+          "pct": 50.8,
+          "range": "22+, Ax+\nK2s+, K5o+\nQ2s+, Q8o+\nJ3s+, J8o+\nT6s+, T8o+\n95s+, 98o\n85s+, 74s+\n64s+, 53s+"
+        }
+      },
+      "4": {
+        "SB": {
+          "pct": 86.7,
+          "range": "22+, 9x+\n82s+, 84o+\n73s+, 74o+\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 54.8,
+          "range": "22+, Kx+\nQ2s+, Q5o+\nJ3s+, J7o+\nT6s+, T8o+\n96s+, 98o\n86s+, 76s"
+        },
+        "CO": {
+          "pct": 47.8,
+          "range": "22+, Ax+\nK2s+, K4o+\nQ2s+, Q8o+\nJ5s+, J8o+\nT6s+, T8o+\n96s+, 86s+\n76s"
+        },
+        "HJ": {
+          "pct": 42.4,
+          "range": "22+, Ax+\nK2s+, K6o+\nQ4s+, Q8o+\nJ7s+, J9o+\nT7s+, T9o\n97s+, 86s+\n76s"
+        },
+        "LJ": {
+          "pct": 40.0,
+          "range": "22+, Ax+\nK2s+, K7o+\nQ5s+, Q9o+\nJ7s+, J9o+\nT7s+, T9o\n97s+, 87s\n76s"
+        },
+        "UTG+2": {
+          "pct": 34.8,
+          "range": "22+, A2s+\nA3o+, K3s+\nK9o+, Q6s+\nQ9o+, J7s+\nJTo, T7s+\n97s+, 87s\n76s"
+        },
+        "UTG+1": {
+          "pct": 31.5,
+          "range": "22+, A2s+\nA4o+, K4s+\nK9o+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n97s+, 87s\n76s"
+        },
+        "UTG": {
+          "pct": 30.0,
+          "range": "22+, A2s+\nA5o+, K5s+\nK9o+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n98s, 87s\n76s"
+        }
+      },
+      "5": {
+        "SB": {
+          "pct": 83.1,
+          "range": "22+, Tx+\n92s+, 94o+\n82s+, 85o+\n73s+, 75o+\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 54.4,
+          "range": "22+, Kx+\nQ2s+, Q5o+\nJ4s+, J7o+\nT6s+, T8o+\n96s+, 98o\n86s+, 76s"
+        },
+        "CO": {
+          "pct": 43.9,
+          "range": "22+, Ax+\nK2s+, K5o+\nQ3s+, Q8o+\nJ6s+, J9o+\nT7s+, T9o\n97s+, 86s+\n76s"
+        },
+        "HJ": {
+          "pct": 39.1,
+          "range": "22+, Ax+\nK2s+, K7o+\nQ5s+, Q9o+\nJ7s+, J9o+\nT7s+, 97s+\n87s, 76s"
+        },
+        "LJ": {
+          "pct": 33.0,
+          "range": "22+, Ax+\nK3s+, K9o+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 98s\n87s"
+        },
+        "UTG+2": {
+          "pct": 30.6,
+          "range": "22+, A2s+\nA4o+, K5s+\nK9o+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "UTG+1": {
+          "pct": 27.0,
+          "range": "22+, A2s+\nA5o+, K6s+\nKTo+, Q8s+\nQTo+, J9s+\nT8s+, 98s"
+        },
+        "UTG": {
+          "pct": 23.4,
+          "range": "22+, A2s+\nA7o+, K7s+\nKTo+, Q9s+\nQJo, J9s+\nT9s, 98s"
+        }
+      },
+      "6": {
+        "SB": {
+          "pct": 81.0,
+          "range": "22+, Jx+\nT2s+, T3o+\n92s+, 95o+\n83s+, 85o+\n73s+, 75o+\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 51.7,
+          "range": "22+, Kx+\nQ2s+, Q6o+\nJ5s+, J8o+\nT6s+, T8o+\n96s+, 86s+\n76s, 65s"
+        },
+        "CO": {
+          "pct": 41.5,
+          "range": "22+, Ax+\nK2s+, K6o+\nQ5s+, Q9o+\nJ7s+, J9o+\nT7s+, T9o\n97s+, 86s+\n76s, 65s"
+        },
+        "HJ": {
+          "pct": 36.0,
+          "range": "22+, Ax+\nK3s+, K8o+\nQ6s+, Q9o+\nJ8s+, JTo\nT8s+, 97s+\n87s, 76s"
+        },
+        "LJ": {
+          "pct": 32.4,
+          "range": "22+, Ax+\nK5s+, K9o+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 98s\n87s"
+        },
+        "UTG+2": {
+          "pct": 27.9,
+          "range": "22+, A2s+\nA4o+, K6s+\nKTo+, Q9s+\nQTo+, J9s+\nT8s+, 98s\n87s"
+        },
+        "UTG+1": {
+          "pct": 23.7,
+          "range": "22+, A2s+\nA7o+, K7s+\nKTo+, Q9s+\nQJo, J9s+\nT8s+, 98s"
+        },
+        "UTG": {
+          "pct": 21.3,
+          "range": "22+, A2s+\nA8o+, K8s+\nKTo+, Q9s+\nJ9s+, T9s\n98s"
+        }
+      },
+      "7": {
+        "SB": {
+          "pct": 78.3,
+          "range": "22+, Jx+\nT2s+, T4o+\n92s+, 96o+\n84s+, 86o+\n73s+, 75o+\n63s+, 65o\n52s+, 43s"
+        },
+        "BTN": {
+          "pct": 49.6,
+          "range": "22+, Kx+\nQ2s+, Q8o+\nJ5s+, J8o+\nT6s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 40.6,
+          "range": "22+, Ax+\nK2s+, K7o+\nQ5s+, Q9o+\nJ7s+, J9o+\nT7s+, T9o\n97s+, 86s+\n76s, 65s"
+        },
+        "HJ": {
+          "pct": 33.3,
+          "range": "22+, Ax+\nK4s+, K9o+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 97s+\n87s, 76s"
+        },
+        "LJ": {
+          "pct": 30.3,
+          "range": "22+, A2s+\nA3o+, K6s+\nKTo+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "UTG+2": {
+          "pct": 24.9,
+          "range": "22+, A2s+\nA7o+, A5o\nK7s+, KTo+\nQ9s+, QJo\nJ9s+, T8s+\n98s, 87s"
+        },
+        "UTG+1": {
+          "pct": 21.3,
+          "range": "22+, A2s+\nA8o+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT8s+, 98s"
+        },
+        "UTG": {
+          "pct": 18.7,
+          "range": "33+, A2s+\nA9o+, K9s+\nKJo+, Q9s+\nJ9s+, T9s\n98s"
+        }
+      },
+      "8": {
+        "SB": {
+          "pct": 75.6,
+          "range": "22+, Jx+\nT2s+, T6o+\n92s+, 96o+\n84s+, 86o+\n73s+, 76o\n63s+, 65o\n52s+, 43s"
+        },
+        "BTN": {
+          "pct": 47.2,
+          "range": "22+, Ax+\nK2s+, K3o+\nQ3s+, Q8o+\nJ6s+, J9o+\nT6s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 37.6,
+          "range": "22+, Ax+\nK2s+, K8o+\nQ6s+, QTo+\nJ7s+, JTo\nT7s+, T9o\n97s+, 86s+\n76s, 65s"
+        },
+        "HJ": {
+          "pct": 32.1,
+          "range": "22+, Ax+\nK5s+, KTo+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 97s+\n87s, 76s"
+        },
+        "LJ": {
+          "pct": 27.3,
+          "range": "22+, A2s+\nA4o+, K6s+\nKTo+, Q9s+\nQJo, J8s+\nT8s+, 98s\n87s"
+        },
+        "UTG+2": {
+          "pct": 23.4,
+          "range": "22+, A2s+\nA7o+, K9s+\nKTo+, Q9s+\nQJo, J9s+\nT8s+, 98s\n87s"
+        },
+        "UTG+1": {
+          "pct": 19.5,
+          "range": "22+, A2s+\nA9o+, K9s+\nKJo+, Q9s+\nJ9s+, T8s+\n98s"
+        },
+        "UTG": {
+          "pct": 17.5,
+          "range": "33+, A3s+\nATo+, K9s+\nKJo+, Q9s+\nJ9s+, T9s\n98s"
+        }
+      },
+      "9": {
+        "SB": {
+          "pct": 73.5,
+          "range": "22+, Qx+\nJ2s+, J4o+\nT2s+, T6o+\n93s+, 96o+\n84s+, 86o+\n73s+, 76o\n63s+, 65o\n52s+, 43s"
+        },
+        "BTN": {
+          "pct": 46.3,
+          "range": "22+, Ax+\nK2s+, K4o+\nQ3s+, Q8o+\nJ6s+, J9o+\nT6s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 35.4,
+          "range": "22+, Ax+\nK3s+, K9o+\nQ6s+, QTo+\nJ7s+, JTo\nT7s+, 97s+\n86s+, 76s\n65s"
+        },
+        "HJ": {
+          "pct": 31.5,
+          "range": "22+, Ax+\nK6s+, KTo+\nQ9s+, QTo+\nJ8s+, JTo\nT8s+, 97s+\n87s, 76s"
+        },
+        "LJ": {
+          "pct": 25.2,
+          "range": "22+, A2s+\nA7o+, A5o\nK7s+, KTo+\nQ9s+, QJo\nJ8s+, T8s+\n98s, 87s"
+        },
+        "UTG+2": {
+          "pct": 21.6,
+          "range": "22+, A2s+\nA8o+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT8s+, 98s\n87s"
+        },
+        "UTG+1": {
+          "pct": 19.2,
+          "range": "22+, A3s+\nA9o+, K9s+\nKJo+, Q9s+\nJ9s+, T8s+\n98s"
+        },
+        "UTG": {
+          "pct": 16.6,
+          "range": "33+, A7s+\nA5s-A4s, ATo+\nK9s+, KJo+\nQ9s+, J9s+\nT9s"
+        }
+      },
+      "10": {
+        "SB": {
+          "pct": 71.9,
+          "range": "22+, Qx+\nJ2s+, J5o+\nT2s+, T6o+\n93s+, 96o+\n84s+, 86o+\n74s+, 76o\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 43.9,
+          "range": "22+, Ax+\nK2s+, K5o+\nQ4s+, Q9o+\nJ7s+, J9o+\nT6s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 34.2,
+          "range": "22+, Ax+\nK4s+, K9o+\nQ8s+, QTo+\nJ8s+, JTo\nT7s+, 97s+\n86s+, 76s\n65s"
+        },
+        "HJ": {
+          "pct": 30.3,
+          "range": "22+, A2s+\nA3o+, K7s+\nKTo+, Q9s+\nQTo+, J8s+\nJTo, T8s+\n97s+, 87s\n76s"
+        },
+        "LJ": {
+          "pct": 23.7,
+          "range": "22+, A2s+\nA7o+, K9s+\nKTo+, Q9s+\nQJo, J8s+\nT8s+, 98s\n87s"
+        },
+        "UTG+2": {
+          "pct": 20.4,
+          "range": "22+, A2s+\nA9o+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT8s+, 98s"
+        },
+        "UTG+1": {
+          "pct": 17.2,
+          "range": "33+, A4s+\nATo+, K9s+\nKJo+, Q9s+\nJ9s+, T9s\n98s"
+        },
+        "UTG": {
+          "pct": 15.4,
+          "range": "33+, A7s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        }
+      },
+      "11": {
+        "SB": {
+          "pct": 70.1,
+          "range": "22+, Qx+\nJ2s+, J6o+\nT2s+, T7o+\n93s+, 96o+\n84s+, 86o+\n74s+, 76o\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 41.8,
+          "range": "22+, Ax+\nK2s+, K7o+\nQ5s+, Q9o+\nJ7s+, J9o+\nT6s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 33.0,
+          "range": "22+, Ax+\nK5s+, KTo+\nQ8s+, QTo+\nJ8s+, JTo\nT7s+, 97s+\n86s+, 76s\n65s"
+        },
+        "HJ": {
+          "pct": 27.3,
+          "range": "22+, A2s+\nA5o+, K7s+\nKTo+, Q8s+\nQJo, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "LJ": {
+          "pct": 22.2,
+          "range": "22+, A2s+\nA8o+, K8s+\nKJo+, Q9s+\nQJo, J8s+\nT8s+, 98s\n87s"
+        },
+        "UTG+2": {
+          "pct": 18.9,
+          "range": "22+, A4s+\nATo+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT8s+, 98s"
+        },
+        "UTG+1": {
+          "pct": 16.6,
+          "range": "33+, A7s+\nA5s-A4s, ATo+\nK9s+, KJo+\nQ9s+, J9s+\nT9s"
+        },
+        "UTG": {
+          "pct": 14.6,
+          "range": "44+, A8s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        }
+      },
+      "12": {
+        "SB": {
+          "pct": 66.8,
+          "range": "22+, Kx+\nQ2s+, Q3o+\nJ2s+, J7o+\nT3s+, T7o+\n94s+, 97o+\n84s+, 86o+\n74s+, 76o\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 40.0,
+          "range": "22+, Ax+\nK2s+, K8o+\nQ5s+, Q9o+\nJ7s+, JTo\nT6s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 32.7,
+          "range": "22+, Ax+\nK5s+, KTo+\nQ8s+, QTo+\nJ8s+, JTo\nT7s+, 97s+\n86s+, 76s"
+        },
+        "HJ": {
+          "pct": 26.1,
+          "range": "22+, A2s+\nA7o+, A5o\nK8s+, KTo+\nQ8s+, QJo\nJ8s+, JTo\nT8s+, 98s\n87s"
+        },
+        "LJ": {
+          "pct": 21.0,
+          "range": "22+, A2s+\nA9o+, K8s+\nKJo+, Q9s+\nQJo, J8s+\nT8s+, 98s"
+        },
+        "UTG+2": {
+          "pct": 17.8,
+          "range": "33+, A3s+\nATo+, K9s+\nKJo+, Q9s+\nJ9s+, T8s+\n98s"
+        },
+        "UTG+1": {
+          "pct": 15.1,
+          "range": "33+, A8s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG": {
+          "pct": 13.4,
+          "range": "44+, A8s+\nAJo+, K9s+\nKQo, Q9s+\nJ9s+, T9s"
+        }
+      },
+      "13": {
+        "SB": {
+          "pct": 64.7,
+          "range": "22+, Kx+\nQ2s+, Q4o+\nJ2s+, J7o+\nT3s+, T7o+\n95s+, 97o+\n84s+, 86o+\n74s+, 76o\n63s+, 53s+\n43s"
+        },
+        "BTN": {
+          "pct": 38.5,
+          "range": "22+, Ax+\nK2s+, K9o+\nQ6s+, QTo+\nJ7s+, J9o+\nT7s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 31.8,
+          "range": "22+, Ax+\nK6s+, KTo+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 97s+\n87s, 76s"
+        },
+        "HJ": {
+          "pct": 24.9,
+          "range": "22+, A2s+\nA7o+, A5o\nK8s+, KJo+\nQ9s+, QJo\nJ8s+, JTo\nT8s+, 98s\n87s"
+        },
+        "LJ": {
+          "pct": 20.4,
+          "range": "22+, A3s+\nA9o+, K9s+\nKJo+, Q9s+\nQJo, J8s+\nT8s+, 98s"
+        },
+        "UTG+2": {
+          "pct": 16.6,
+          "range": "33+, A7s+\nA5s-A4s, ATo+\nK9s+, KJo+\nQ9s+, J9s+\nT9s"
+        },
+        "UTG+1": {
+          "pct": 14.6,
+          "range": "44+, A8s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG": {
+          "pct": 12.4,
+          "range": "55+, A9s+\nA5s, AJo+\nK9s+, KQo\nQTs+, JTs\nT9s"
+        }
+      },
+      "14": {
+        "SB": {
+          "pct": 64.7,
+          "range": "22+, Kx+\nQ2s+, Q4o+\nJ2s+, J7o+\nT3s+, T7o+\n95s+, 97o+\n84s+, 86o+\n74s+, 76o\n63s+, 53s+\n43s"
+        },
+        "BTN": {
+          "pct": 36.7,
+          "range": "22+, Ax+\nK4s+, K9o+\nQ6s+, QTo+\nJ7s+, JTo\nT7s+, T9o\n96s+, 86s+\n75s+, 65s"
+        },
+        "CO": {
+          "pct": 29.7,
+          "range": "22+, A2s+\nA4o+, K7s+\nKTo+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n97s+, 87s\n76s"
+        },
+        "HJ": {
+          "pct": 23.1,
+          "range": "22+, A2s+\nA8o+, K8s+\nKJo+, Q9s+\nQJo, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "LJ": {
+          "pct": 18.3,
+          "range": "22+, A3s+\nATo+, K9s+\nKJo+, Q9s+\nJ9s+, T8s+\n98s"
+        },
+        "UTG+2": {
+          "pct": 16.3,
+          "range": "33+, A7s+\nA5s, ATo+\nK9s+, KJo+\nQ9s+, J9s+\nT9s"
+        },
+        "UTG+1": {
+          "pct": 13.7,
+          "range": "44+, A8s+\nA5s, AJo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG": {
+          "pct": 11.8,
+          "range": "55+, A9s+\nA5s, AJo+\nKTs+, KQo\nQTs+, JTs"
+        }
+      },
+      "15": {
+        "SB": {
+          "pct": 61.7,
+          "range": "22+, Kx+\nQ2s+, Q5o+\nJ2s+, J8o+\nT4s+, T7o+\n95s+, 97o+\n84s+, 87o\n74s+, 76o\n63s+, 53s+\n43s"
+        },
+        "BTN": {
+          "pct": 36.7,
+          "range": "22+, Ax+\nK4s+, K9o+\nQ6s+, QTo+\nJ7s+, JTo\nT7s+, T9o\n96s+, 86s+\n75s+, 65s"
+        },
+        "CO": {
+          "pct": 29.7,
+          "range": "22+, A2s+\nA4o+, K7s+\nKTo+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n97s+, 87s\n76s"
+        },
+        "HJ": {
+          "pct": 21.3,
+          "range": "22+, A2s+\nA9o+, K8s+\nKJo+, Q9s+\nQJo, J8s+\nT8s+, 98s\n87s"
+        },
+        "LJ": {
+          "pct": 18.1,
+          "range": "33+, A4s+\nATo+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT9s, 98s"
+        },
+        "UTG+2": {
+          "pct": 15.1,
+          "range": "33+, A8s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG+1": {
+          "pct": 12.8,
+          "range": "44+, A9s+\nA5s, AJo+\nK9s+, KQo\nQTs+, JTs\nT9s"
+        },
+        "UTG": {
+          "pct": 10.9,
+          "range": "55+, A9s+\nA5s, AJo+\nKTs+, QTs+\nJTs"
+        }
+      }
+    },
+    "BB": {
+      "1": {
+        "SB": {
+          "pct": 100.0,
+          "range": "Any Two"
+        },
+        "BTN": {
+          "pct": 87.9,
+          "range": "22+, Tx+\n92s+, 94o+\n82s+, 84o+\n72s+, 74o+\n62s+, 64o+\n52s+, 54o\n42s+"
+        },
+        "CO": {
+          "pct": 95.5,
+          "range": "22+, 8x+\n72s+, 73o+\n62s+, 63o+\n52s+, 53o+\n42s+, 43o\n32s"
+        },
+        "HJ": {
+          "pct": 98.2,
+          "range": "22+, 8x+\n72s+, 73o+\n62s+, 63o+\n5x, 42s+\n43o, 32s"
+        },
+        "LJ": {
+          "pct": 98.2,
+          "range": "22+, 8x+\n72s+, 73o+\n62s+, 63o+\n5x, 42s+\n43o, 32s"
+        },
+        "UTG+2": {
+          "pct": 98.2,
+          "range": "22+, 8x+\n72s+, 73o+\n62s+, 63o+\n5x, 42s+\n43o, 32s"
+        },
+        "UTG+1": {
+          "pct": 98.2,
+          "range": "22+, 8x+\n72s+, 73o+\n62s+, 63o+\n5x, 42s+\n43o, 32s"
+        },
+        "UTG": {
+          "pct": 98.2,
+          "range": "22+, 8x+\n72s+, 73o+\n62s+, 63o+\n5x, 42s+\n43o, 32s"
+        }
+      },
+      "2": {
+        "SB": {
+          "pct": 100.0,
+          "range": "Any Two"
+        },
+        "BTN": {
+          "pct": 68.9,
+          "range": "22+, Qx+\nJ2s+, J5o+\nT2s+, T6o+\n95s+, 96o+\n85s+, 86o+\n75s+, 76o\n64s+, 54s"
+        },
+        "CO": {
+          "pct": 80.7,
+          "range": "22+, Jx+\nT2s+, T4o+\n92s+, 95o+\n82s+, 85o+\n73s+, 75o+\n63s+, 65o\n52s+, 43s"
+        },
+        "HJ": {
+          "pct": 84.6,
+          "range": "22+, Jx+\nT2s+, T3o+\n92s+, 95o+\n82s+, 85o+\n72s+, 75o+\n62s+, 64o+\n52s+, 54o\n42s+, 32s"
+        },
+        "LJ": {
+          "pct": 85.5,
+          "range": "22+, Jx+\nT2s+, T3o+\n92s+, 95o+\n82s+, 85o+\n72s+, 74o+\n62s+, 64o+\n52s+, 54o\n42s+, 32s"
+        },
+        "UTG+2": {
+          "pct": 85.5,
+          "range": "22+, Jx+\nT2s+, T3o+\n92s+, 95o+\n82s+, 85o+\n72s+, 74o+\n62s+, 64o+\n52s+, 54o\n42s+, 32s"
+        },
+        "UTG+1": {
+          "pct": 85.5,
+          "range": "22+, Jx+\nT2s+, T3o+\n92s+, 95o+\n82s+, 85o+\n72s+, 74o+\n62s+, 64o+\n52s+, 54o\n42s+, 32s"
+        },
+        "UTG": {
+          "pct": 85.5,
+          "range": "22+, Jx+\nT2s+, T3o+\n92s+, 95o+\n82s+, 85o+\n72s+, 74o+\n62s+, 64o+\n52s+, 54o\n42s+, 32s"
+        }
+      },
+      "3": {
+        "SB": {
+          "pct": 94.6,
+          "range": "22+, 8x+\n72s+, 73o+\n62s+, 63o+\n52s+, 53o+\n42s+, 32s"
+        },
+        "BTN": {
+          "pct": 60.5,
+          "range": "22+, Kx+\nQ2s+, Q4o+\nJ2s+, J7o+\nT4s+, T7o+\n95s+, 97o+\n85s+, 87o\n75s+, 65s"
+        },
+        "CO": {
+          "pct": 59.3,
+          "range": "22+, Kx+\nQ2s+, Q5o+\nJ3s+, J7o+\nT5s+, T7o+\n95s+, 97o+\n85s+, 87o\n75s+, 65s\n54s"
+        },
+        "HJ": {
+          "pct": 53.5,
+          "range": "22+, Ax+\nK2s+, K3o+\nQ2s+, Q6o+\nJ3s+, J8o+\nT5s+, T8o+\n96s+, 98o\n85s+, 75s+\n65s, 54s"
+        },
+        "LJ": {
+          "pct": 51.7,
+          "range": "22+, Ax+\nK2s+, K4o+\nQ2s+, Q7o+\nJ3s+, J8o+\nT6s+, T8o+\n96s+, 98o\n85s+, 75s+\n64s+, 54s"
+        },
+        "UTG+2": {
+          "pct": 51.4,
+          "range": "22+, Ax+\nK2s+, K4o+\nQ2s+, Q8o+\nJ3s+, J8o+\nT6s+, T8o+\n96s+, 98o\n85s+, 74s+\n64s+, 53s+"
+        },
+        "UTG+1": {
+          "pct": 50.8,
+          "range": "22+, Ax+\nK2s+, K5o+\nQ2s+, Q8o+\nJ3s+, J8o+\nT6s+, T8o+\n95s+, 98o\n85s+, 74s+\n64s+, 53s+"
+        },
+        "UTG": {
+          "pct": 50.8,
+          "range": "22+, Ax+\nK2s+, K5o+\nQ2s+, Q8o+\nJ3s+, J8o+\nT6s+, T8o+\n95s+, 98o\n85s+, 74s+\n64s+, 53s+"
+        }
+      },
+      "4": {
+        "SB": {
+          "pct": 86.7,
+          "range": "22+, 9x+\n82s+, 84o+\n73s+, 74o+\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 54.8,
+          "range": "22+, Kx+\nQ2s+, Q5o+\nJ3s+, J7o+\nT6s+, T8o+\n96s+, 98o\n86s+, 76s"
+        },
+        "CO": {
+          "pct": 47.8,
+          "range": "22+, Ax+\nK2s+, K4o+\nQ2s+, Q8o+\nJ5s+, J8o+\nT6s+, T8o+\n96s+, 86s+\n76s"
+        },
+        "HJ": {
+          "pct": 42.4,
+          "range": "22+, Ax+\nK2s+, K6o+\nQ4s+, Q8o+\nJ7s+, J9o+\nT7s+, T9o\n97s+, 86s+\n76s"
+        },
+        "LJ": {
+          "pct": 40.0,
+          "range": "22+, Ax+\nK2s+, K7o+\nQ5s+, Q9o+\nJ7s+, J9o+\nT7s+, T9o\n97s+, 87s\n76s"
+        },
+        "UTG+2": {
+          "pct": 34.8,
+          "range": "22+, A2s+\nA3o+, K3s+\nK9o+, Q6s+\nQ9o+, J7s+\nJTo, T7s+\n97s+, 87s\n76s"
+        },
+        "UTG+1": {
+          "pct": 31.5,
+          "range": "22+, A2s+\nA4o+, K4s+\nK9o+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n97s+, 87s\n76s"
+        },
+        "UTG": {
+          "pct": 30.0,
+          "range": "22+, A2s+\nA5o+, K5s+\nK9o+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n98s, 87s\n76s"
+        }
+      },
+      "5": {
+        "SB": {
+          "pct": 83.1,
+          "range": "22+, Tx+\n92s+, 94o+\n82s+, 85o+\n73s+, 75o+\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 54.4,
+          "range": "22+, Kx+\nQ2s+, Q5o+\nJ4s+, J7o+\nT6s+, T8o+\n96s+, 98o\n86s+, 76s"
+        },
+        "CO": {
+          "pct": 43.9,
+          "range": "22+, Ax+\nK2s+, K5o+\nQ3s+, Q8o+\nJ6s+, J9o+\nT7s+, T9o\n97s+, 86s+\n76s"
+        },
+        "HJ": {
+          "pct": 39.1,
+          "range": "22+, Ax+\nK2s+, K7o+\nQ5s+, Q9o+\nJ7s+, J9o+\nT7s+, 97s+\n87s, 76s"
+        },
+        "LJ": {
+          "pct": 33.0,
+          "range": "22+, Ax+\nK3s+, K9o+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 98s\n87s"
+        },
+        "UTG+2": {
+          "pct": 30.6,
+          "range": "22+, A2s+\nA4o+, K5s+\nK9o+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "UTG+1": {
+          "pct": 27.0,
+          "range": "22+, A2s+\nA5o+, K6s+\nKTo+, Q8s+\nQTo+, J9s+\nT8s+, 98s"
+        },
+        "UTG": {
+          "pct": 23.4,
+          "range": "22+, A2s+\nA7o+, K7s+\nKTo+, Q9s+\nQJo, J9s+\nT9s, 98s"
+        }
+      },
+      "6": {
+        "SB": {
+          "pct": 81.0,
+          "range": "22+, Jx+\nT2s+, T3o+\n92s+, 95o+\n83s+, 85o+\n73s+, 75o+\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 51.7,
+          "range": "22+, Kx+\nQ2s+, Q6o+\nJ5s+, J8o+\nT6s+, T8o+\n96s+, 86s+\n76s, 65s"
+        },
+        "CO": {
+          "pct": 41.5,
+          "range": "22+, Ax+\nK2s+, K6o+\nQ5s+, Q9o+\nJ7s+, J9o+\nT7s+, T9o\n97s+, 86s+\n76s, 65s"
+        },
+        "HJ": {
+          "pct": 36.0,
+          "range": "22+, Ax+\nK3s+, K8o+\nQ6s+, Q9o+\nJ8s+, JTo\nT8s+, 97s+\n87s, 76s"
+        },
+        "LJ": {
+          "pct": 32.4,
+          "range": "22+, Ax+\nK5s+, K9o+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 98s\n87s"
+        },
+        "UTG+2": {
+          "pct": 27.9,
+          "range": "22+, A2s+\nA4o+, K6s+\nKTo+, Q9s+\nQTo+, J9s+\nT8s+, 98s\n87s"
+        },
+        "UTG+1": {
+          "pct": 23.7,
+          "range": "22+, A2s+\nA7o+, K7s+\nKTo+, Q9s+\nQJo, J9s+\nT8s+, 98s"
+        },
+        "UTG": {
+          "pct": 21.3,
+          "range": "22+, A2s+\nA8o+, K8s+\nKTo+, Q9s+\nJ9s+, T9s\n98s"
+        }
+      },
+      "7": {
+        "SB": {
+          "pct": 78.3,
+          "range": "22+, Jx+\nT2s+, T4o+\n92s+, 96o+\n84s+, 86o+\n73s+, 75o+\n63s+, 65o\n52s+, 43s"
+        },
+        "BTN": {
+          "pct": 49.6,
+          "range": "22+, Kx+\nQ2s+, Q8o+\nJ5s+, J8o+\nT6s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 40.6,
+          "range": "22+, Ax+\nK2s+, K7o+\nQ5s+, Q9o+\nJ7s+, J9o+\nT7s+, T9o\n97s+, 86s+\n76s, 65s"
+        },
+        "HJ": {
+          "pct": 33.3,
+          "range": "22+, Ax+\nK4s+, K9o+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 97s+\n87s, 76s"
+        },
+        "LJ": {
+          "pct": 30.3,
+          "range": "22+, A2s+\nA3o+, K6s+\nKTo+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "UTG+2": {
+          "pct": 24.9,
+          "range": "22+, A2s+\nA7o+, A5o\nK7s+, KTo+\nQ9s+, QJo\nJ9s+, T8s+\n98s, 87s"
+        },
+        "UTG+1": {
+          "pct": 21.3,
+          "range": "22+, A2s+\nA8o+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT8s+, 98s"
+        },
+        "UTG": {
+          "pct": 18.7,
+          "range": "33+, A2s+\nA9o+, K9s+\nKJo+, Q9s+\nJ9s+, T9s\n98s"
+        }
+      },
+      "8": {
+        "SB": {
+          "pct": 75.6,
+          "range": "22+, Jx+\nT2s+, T6o+\n92s+, 96o+\n84s+, 86o+\n73s+, 76o\n63s+, 65o\n52s+, 43s"
+        },
+        "BTN": {
+          "pct": 47.2,
+          "range": "22+, Ax+\nK2s+, K3o+\nQ3s+, Q8o+\nJ6s+, J9o+\nT6s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 37.6,
+          "range": "22+, Ax+\nK2s+, K8o+\nQ6s+, QTo+\nJ7s+, JTo\nT7s+, T9o\n97s+, 86s+\n76s, 65s"
+        },
+        "HJ": {
+          "pct": 32.1,
+          "range": "22+, Ax+\nK5s+, KTo+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 97s+\n87s, 76s"
+        },
+        "LJ": {
+          "pct": 27.3,
+          "range": "22+, A2s+\nA4o+, K6s+\nKTo+, Q9s+\nQJo, J8s+\nT8s+, 98s\n87s"
+        },
+        "UTG+2": {
+          "pct": 23.4,
+          "range": "22+, A2s+\nA7o+, K9s+\nKTo+, Q9s+\nQJo, J9s+\nT8s+, 98s\n87s"
+        },
+        "UTG+1": {
+          "pct": 19.5,
+          "range": "22+, A2s+\nA9o+, K9s+\nKJo+, Q9s+\nJ9s+, T8s+\n98s"
+        },
+        "UTG": {
+          "pct": 17.5,
+          "range": "33+, A3s+\nATo+, K9s+\nKJo+, Q9s+\nJ9s+, T9s\n98s"
+        }
+      },
+      "9": {
+        "SB": {
+          "pct": 73.5,
+          "range": "22+, Qx+\nJ2s+, J4o+\nT2s+, T6o+\n93s+, 96o+\n84s+, 86o+\n73s+, 76o\n63s+, 65o\n52s+, 43s"
+        },
+        "BTN": {
+          "pct": 46.3,
+          "range": "22+, Ax+\nK2s+, K4o+\nQ3s+, Q8o+\nJ6s+, J9o+\nT6s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 35.4,
+          "range": "22+, Ax+\nK3s+, K9o+\nQ6s+, QTo+\nJ7s+, JTo\nT7s+, 97s+\n86s+, 76s\n65s"
+        },
+        "HJ": {
+          "pct": 31.5,
+          "range": "22+, Ax+\nK6s+, KTo+\nQ9s+, QTo+\nJ8s+, JTo\nT8s+, 97s+\n87s, 76s"
+        },
+        "LJ": {
+          "pct": 25.2,
+          "range": "22+, A2s+\nA7o+, A5o\nK7s+, KTo+\nQ9s+, QJo\nJ8s+, T8s+\n98s, 87s"
+        },
+        "UTG+2": {
+          "pct": 21.6,
+          "range": "22+, A2s+\nA8o+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT8s+, 98s\n87s"
+        },
+        "UTG+1": {
+          "pct": 19.2,
+          "range": "22+, A3s+\nA9o+, K9s+\nKJo+, Q9s+\nJ9s+, T8s+\n98s"
+        },
+        "UTG": {
+          "pct": 16.6,
+          "range": "33+, A7s+\nA5s-A4s, ATo+\nK9s+, KJo+\nQ9s+, J9s+\nT9s"
+        }
+      },
+      "10": {
+        "SB": {
+          "pct": 71.9,
+          "range": "22+, Qx+\nJ2s+, J5o+\nT2s+, T6o+\n93s+, 96o+\n84s+, 86o+\n74s+, 76o\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 43.9,
+          "range": "22+, Ax+\nK2s+, K5o+\nQ4s+, Q9o+\nJ7s+, J9o+\nT6s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 34.2,
+          "range": "22+, Ax+\nK4s+, K9o+\nQ8s+, QTo+\nJ8s+, JTo\nT7s+, 97s+\n86s+, 76s\n65s"
+        },
+        "HJ": {
+          "pct": 30.3,
+          "range": "22+, A2s+\nA3o+, K7s+\nKTo+, Q9s+\nQTo+, J8s+\nJTo, T8s+\n97s+, 87s\n76s"
+        },
+        "LJ": {
+          "pct": 23.7,
+          "range": "22+, A2s+\nA7o+, K9s+\nKTo+, Q9s+\nQJo, J8s+\nT8s+, 98s\n87s"
+        },
+        "UTG+2": {
+          "pct": 20.4,
+          "range": "22+, A2s+\nA9o+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT8s+, 98s"
+        },
+        "UTG+1": {
+          "pct": 17.2,
+          "range": "33+, A4s+\nATo+, K9s+\nKJo+, Q9s+\nJ9s+, T9s\n98s"
+        },
+        "UTG": {
+          "pct": 15.4,
+          "range": "33+, A7s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        }
+      },
+      "11": {
+        "SB": {
+          "pct": 70.1,
+          "range": "22+, Qx+\nJ2s+, J6o+\nT2s+, T7o+\n93s+, 96o+\n84s+, 86o+\n74s+, 76o\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 41.8,
+          "range": "22+, Ax+\nK2s+, K7o+\nQ5s+, Q9o+\nJ7s+, J9o+\nT6s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 33.0,
+          "range": "22+, Ax+\nK5s+, KTo+\nQ8s+, QTo+\nJ8s+, JTo\nT7s+, 97s+\n86s+, 76s\n65s"
+        },
+        "HJ": {
+          "pct": 27.3,
+          "range": "22+, A2s+\nA5o+, K7s+\nKTo+, Q8s+\nQJo, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "LJ": {
+          "pct": 22.2,
+          "range": "22+, A2s+\nA8o+, K8s+\nKJo+, Q9s+\nQJo, J8s+\nT8s+, 98s\n87s"
+        },
+        "UTG+2": {
+          "pct": 18.9,
+          "range": "22+, A4s+\nATo+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT8s+, 98s"
+        },
+        "UTG+1": {
+          "pct": 16.6,
+          "range": "33+, A7s+\nA5s-A4s, ATo+\nK9s+, KJo+\nQ9s+, J9s+\nT9s"
+        },
+        "UTG": {
+          "pct": 14.6,
+          "range": "44+, A8s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        }
+      },
+      "12": {
+        "SB": {
+          "pct": 66.8,
+          "range": "22+, Kx+\nQ2s+, Q3o+\nJ2s+, J7o+\nT3s+, T7o+\n94s+, 97o+\n84s+, 86o+\n74s+, 76o\n63s+, 65o\n53s+, 43s"
+        },
+        "BTN": {
+          "pct": 40.0,
+          "range": "22+, Ax+\nK2s+, K8o+\nQ5s+, Q9o+\nJ7s+, JTo\nT6s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 32.7,
+          "range": "22+, Ax+\nK5s+, KTo+\nQ8s+, QTo+\nJ8s+, JTo\nT7s+, 97s+\n86s+, 76s"
+        },
+        "HJ": {
+          "pct": 26.1,
+          "range": "22+, A2s+\nA7o+, A5o\nK8s+, KTo+\nQ8s+, QJo\nJ8s+, JTo\nT8s+, 98s\n87s"
+        },
+        "LJ": {
+          "pct": 21.0,
+          "range": "22+, A2s+\nA9o+, K8s+\nKJo+, Q9s+\nQJo, J8s+\nT8s+, 98s"
+        },
+        "UTG+2": {
+          "pct": 17.8,
+          "range": "33+, A3s+\nATo+, K9s+\nKJo+, Q9s+\nJ9s+, T8s+\n98s"
+        },
+        "UTG+1": {
+          "pct": 15.1,
+          "range": "33+, A8s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG": {
+          "pct": 13.4,
+          "range": "44+, A8s+\nAJo+, K9s+\nKQo, Q9s+\nJ9s+, T9s"
+        }
+      },
+      "13": {
+        "SB": {
+          "pct": 64.7,
+          "range": "22+, Kx+\nQ2s+, Q4o+\nJ2s+, J7o+\nT3s+, T7o+\n95s+, 97o+\n84s+, 86o+\n74s+, 76o\n63s+, 53s+\n43s"
+        },
+        "BTN": {
+          "pct": 38.5,
+          "range": "22+, Ax+\nK2s+, K9o+\nQ6s+, QTo+\nJ7s+, J9o+\nT7s+, T9o\n96s+, 86s+\n75s+, 65s\n54s"
+        },
+        "CO": {
+          "pct": 31.8,
+          "range": "22+, Ax+\nK6s+, KTo+\nQ8s+, QTo+\nJ8s+, JTo\nT8s+, 97s+\n87s, 76s"
+        },
+        "HJ": {
+          "pct": 24.9,
+          "range": "22+, A2s+\nA7o+, A5o\nK8s+, KJo+\nQ9s+, QJo\nJ8s+, JTo\nT8s+, 98s\n87s"
+        },
+        "LJ": {
+          "pct": 20.4,
+          "range": "22+, A3s+\nA9o+, K9s+\nKJo+, Q9s+\nQJo, J8s+\nT8s+, 98s"
+        },
+        "UTG+2": {
+          "pct": 16.6,
+          "range": "33+, A7s+\nA5s-A4s, ATo+\nK9s+, KJo+\nQ9s+, J9s+\nT9s"
+        },
+        "UTG+1": {
+          "pct": 14.6,
+          "range": "44+, A8s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG": {
+          "pct": 12.4,
+          "range": "55+, A9s+\nA5s, AJo+\nK9s+, KQo\nQTs+, JTs\nT9s"
+        }
+      },
+      "14": {
+        "SB": {
+          "pct": 64.7,
+          "range": "22+, Kx+\nQ2s+, Q4o+\nJ2s+, J7o+\nT3s+, T7o+\n95s+, 97o+\n84s+, 86o+\n74s+, 76o\n63s+, 53s+\n43s"
+        },
+        "BTN": {
+          "pct": 36.7,
+          "range": "22+, Ax+\nK4s+, K9o+\nQ6s+, QTo+\nJ7s+, JTo\nT7s+, T9o\n96s+, 86s+\n75s+, 65s"
+        },
+        "CO": {
+          "pct": 29.7,
+          "range": "22+, A2s+\nA4o+, K7s+\nKTo+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n97s+, 87s\n76s"
+        },
+        "HJ": {
+          "pct": 23.1,
+          "range": "22+, A2s+\nA8o+, K8s+\nKJo+, Q9s+\nQJo, J8s+\nJTo, T8s+\n98s, 87s"
+        },
+        "LJ": {
+          "pct": 18.3,
+          "range": "22+, A3s+\nATo+, K9s+\nKJo+, Q9s+\nJ9s+, T8s+\n98s"
+        },
+        "UTG+2": {
+          "pct": 16.3,
+          "range": "33+, A7s+\nA5s, ATo+\nK9s+, KJo+\nQ9s+, J9s+\nT9s"
+        },
+        "UTG+1": {
+          "pct": 13.7,
+          "range": "44+, A8s+\nA5s, AJo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG": {
+          "pct": 11.8,
+          "range": "55+, A9s+\nA5s, AJo+\nKTs+, KQo\nQTs+, JTs"
+        }
+      },
+      "15": {
+        "SB": {
+          "pct": 61.7,
+          "range": "22+, Kx+\nQ2s+, Q5o+\nJ2s+, J8o+\nT4s+, T7o+\n95s+, 97o+\n84s+, 87o\n74s+, 76o\n63s+, 53s+\n43s"
+        },
+        "BTN": {
+          "pct": 36.7,
+          "range": "22+, Ax+\nK4s+, K9o+\nQ6s+, QTo+\nJ7s+, JTo\nT7s+, T9o\n96s+, 86s+\n75s+, 65s"
+        },
+        "CO": {
+          "pct": 29.7,
+          "range": "22+, A2s+\nA4o+, K7s+\nKTo+, Q8s+\nQTo+, J8s+\nJTo, T8s+\n97s+, 87s\n76s"
+        },
+        "HJ": {
+          "pct": 21.3,
+          "range": "22+, A2s+\nA9o+, K8s+\nKJo+, Q9s+\nQJo, J8s+\nT8s+, 98s\n87s"
+        },
+        "LJ": {
+          "pct": 18.1,
+          "range": "33+, A4s+\nATo+, K9s+\nKJo+, Q9s+\nQJo, J9s+\nT9s, 98s"
+        },
+        "UTG+2": {
+          "pct": 15.1,
+          "range": "33+, A8s+\nA5s, ATo+\nK9s+, KQo\nQ9s+, J9s+\nT9s"
+        },
+        "UTG+1": {
+          "pct": 12.8,
+          "range": "44+, A9s+\nA5s, AJo+\nK9s+, KQo\nQTs+, JTs\nT9s"
+        },
+        "UTG": {
+          "pct": 10.9,
+          "range": "55+, A9s+\nA5s, AJo+\nKTs+, QTs+\nJTs"
+        }
+      }
+    }
+  }
+}
