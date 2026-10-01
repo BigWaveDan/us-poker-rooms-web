@@ -58,11 +58,23 @@ function valueToForm(room: Room, key: EditableRoomField): string {
   return String(v);
 }
 
+/** Blank / whitespace / case-insensitive N/A → empty for save & attribution. */
+function emptyIfNa(s: string | undefined | null): string {
+  const t = (s ?? "").trim();
+  if (!t || t.toLowerCase() === "n/a") return "";
+  return t;
+}
+
 function sourceToInputs(src: FieldSource | undefined): { label: string; url: string } {
   if (src == null || src === "unknown" || isUnknownSource(src)) {
-    return { label: "", url: "" };
+    return { label: "N/A", url: "N/A" };
   }
-  return { label: src.label ?? "", url: src.url ?? "" };
+  const label = (src.label ?? "").trim();
+  const url = (src.url ?? "").trim();
+  return {
+    label: label && label.toLowerCase() !== "n/a" ? label : "N/A",
+    url: url && url.toLowerCase() !== "n/a" ? url : "N/A",
+  };
 }
 
 export default function EditRoomPage() {
@@ -213,10 +225,6 @@ export default function EditRoomPage() {
                   </li>
                 ))}
               </ul>
-              <p className="meta">
-                These are not mapped to fields. Per-field sources below default
-                to unknown unless you set them.
-              </p>
             </section>
           )}
 
@@ -260,8 +268,7 @@ export default function EditRoomPage() {
                   Source label
                   <input
                     type="text"
-                    placeholder="unknown if empty"
-                    value={sources[key]?.label ?? ""}
+                    value={sources[key]?.label ?? "N/A"}
                     onChange={(e) =>
                       setSources((s) => ({
                         ...s,
@@ -277,8 +284,7 @@ export default function EditRoomPage() {
                   Source URL
                   <input
                     type="url"
-                    placeholder="optional"
-                    value={sources[key]?.url ?? ""}
+                    value={sources[key]?.url ?? "N/A"}
                     onChange={(e) =>
                       setSources((s) => ({
                         ...s,
@@ -295,12 +301,13 @@ export default function EditRoomPage() {
                 Current attribution:{" "}
                 {fieldSourceLabel(
                   normalizeFieldSource(
-                    sources[key]?.label || sources[key]?.url
-                      ? {
-                          label: sources[key]?.label || null,
-                          url: sources[key]?.url || null,
-                        }
-                      : "unknown",
+                    (() => {
+                      const label = emptyIfNa(sources[key]?.label);
+                      const url = emptyIfNa(sources[key]?.url);
+                      return label || url
+                        ? { label: label || null, url: url || null }
+                        : "unknown";
+                    })(),
                   ),
                 )}
               </div>

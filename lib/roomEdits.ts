@@ -59,8 +59,14 @@ export function normalizeFieldSource(raw: unknown): FieldSource {
   }
   if (typeof raw === "object") {
     const o = raw as { url?: unknown; label?: unknown };
-    const url = typeof o.url === "string" ? o.url.trim() : "";
-    const label = typeof o.label === "string" ? o.label.trim() : "";
+    const scrub = (v: unknown): string => {
+      if (typeof v !== "string") return "";
+      const t = v.trim();
+      if (!t || t.toLowerCase() === "n/a") return "";
+      return t;
+    };
+    const url = scrub(o.url);
+    const label = scrub(o.label);
     if (!url && !label) return "unknown";
     return {
       url: url || null,
@@ -224,10 +230,15 @@ export function buildOverlayFromForm(input: {
 }): RoomEditOverlay {
   const values = input.values;
   const field_sources: FieldSourcesMap = {};
+  const emptyIfNa = (s: string | undefined | null): string => {
+    const t = (s ?? "").trim();
+    if (!t || t.toLowerCase() === "n/a") return "";
+    return t;
+  };
   for (const key of EDITABLE_ROOM_FIELDS) {
     const s = input.sources[key];
-    const label = s?.label?.trim() ?? "";
-    const url = s?.url?.trim() ?? "";
+    const label = emptyIfNa(s?.label);
+    const url = emptyIfNa(s?.url);
     if (!label && !url) {
       field_sources[key] = "unknown";
     } else {
