@@ -1,5 +1,7 @@
 # US Poker Rooms (web)
 
+Part of us-poker-rooms.
+
 Next.js App Router UI over the sourced US live poker rooms dataset. Prefer the
 live FastAPI (`us-poker-rooms`); when the API is down, fall back to a **full
 offline JSON snapshot** synced from `poker.db` — not a tiny 3-room fixture.
