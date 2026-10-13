@@ -44,6 +44,11 @@ export type Room = {
   tournament_notes: string | null;
   notes: string | null;
   status: RoomStatus | string;
+  poker_url?: string | null;
+  poker_room_status?: string | null;
+  poker_room_evidence?: string | null;
+  poker_room_evidence_url?: string | null;
+  poker_room_checked_at?: string | null;
   created_at: string;
   updated_at: string;
   sources?: Source[];
@@ -82,4 +87,10 @@ export type RoomsQuery = {
   type?: string;
   limit?: number;
   offset?: number;
+};
+
+export const POKER_ROOM_STATUS_LABELS: Record<string, string> = {
+  confirmed_poker_room: "Confirmed",
+  not_poker_room: "Not a poker room",
+  unclear: "Unclear",
 };

@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { mergeRoomEdits } from "@/lib/roomEdits";
 import type { Room } from "@/lib/types";
+import { POKER_ROOM_STATUS_LABELS } from "@/lib/types";
 import { STATE_BOUNDS } from "@/lib/stateBounds";
 import { US_JURISDICTIONS } from "@/lib/states";
 
@@ -65,6 +66,14 @@ function popupHtml(room: Room): string {
     .filter(Boolean)
     .join(", ");
   const addr = [r.address ? esc(r.address) : "", cityLine].filter(Boolean).join("<br>");
+  if (r.poker_room_status) {
+    const lbl = POKER_ROOM_STATUS_LABELS[r.poker_room_status] ?? r.poker_room_status;
+    const ev = r.poker_room_evidence ? trunc(r.poker_room_evidence, 90) : "";
+    const evHtml = r.poker_room_evidence_url
+      ? link(r.poker_room_evidence_url, ev ? `“${ev}”` : "evidence")
+      : ev ? `“${esc(ev)}”` : "";
+    row("Poker room", `<b class="rp-prs rp-prs-${esc(r.poker_room_status)}">${esc(lbl)}</b>${evHtml ? `<div class="rp-dim">${evHtml}</div>` : ""}`);
+  }
   row("Address", addr);
   if (r.phone) {
     const tel = String(r.phone).replace(/[^0-9+]/g, "");

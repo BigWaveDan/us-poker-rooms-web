@@ -8,6 +8,7 @@ import { formatGames, formatPlace, formatType } from "@/lib/format";
 import { fieldSourceLabel, mergeOneRoom } from "@/lib/roomEdits";
 import { stateName } from "@/lib/states";
 import type { Room } from "@/lib/types";
+import { POKER_ROOM_STATUS_LABELS } from "@/lib/types";
 import { EDITABLE_ROOM_FIELDS } from "@/lib/roomEdits";
 
 type Props = {
@@ -55,6 +56,27 @@ export default function RoomDetailClient({ room: initial, live, error }: Props) 
       <section className="card">
         <h2>Venue</h2>
         <dl className="dl">
+          {room.poker_room_status ? (
+            <>
+              <dt>Poker room</dt>
+              <dd>
+                <strong>{POKER_ROOM_STATUS_LABELS[room.poker_room_status] ?? room.poker_room_status}</strong>
+                {room.poker_room_evidence || room.poker_room_evidence_url ? (
+                  <div className="meta">
+                    Evidence:{" "}
+                    {room.poker_room_evidence_url ? (
+                      <a href={room.poker_room_evidence_url} rel="noreferrer" target="_blank">
+                        {room.poker_room_evidence ? `“${room.poker_room_evidence}”` : room.poker_room_evidence_url}
+                      </a>
+                    ) : (
+                      `“${room.poker_room_evidence}”`
+                    )}
+                    {room.poker_room_checked_at ? ` (checked ${room.poker_room_checked_at.slice(0, 10)})` : ""}
+                  </div>
+                ) : null}
+              </dd>
+            </>
+          ) : null}
           <dt>Address</dt>
           <dd>
             {formatPlace(room)}
