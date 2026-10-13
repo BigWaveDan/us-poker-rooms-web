@@ -177,9 +177,9 @@ export default function RoomsMap({ rooms, live, error }: Props) {
     }
 
     if (bounds.length === 1) {
-      map.setView(bounds[0], 12);
+      map.setView(bounds[0], 11);
     } else if (bounds.length > 1) {
-      map.fitBounds(L.latLngBounds(bounds), { padding: [40, 40], maxZoom: 8 });
+      map.fitBounds(L.latLngBounds(bounds), { padding: [40, 40], maxZoom: 11 });
     } else {
       map.setView([39.8283, -98.5795], 4);
     }
