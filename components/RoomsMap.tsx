@@ -3,6 +3,103 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { mergeRoomEdits } from "@/lib/roomEdits";
 import type { Room } from "@/lib/types";
+import { STATE_BOUNDS } from "@/lib/stateBounds";
+import { US_JURISDICTIONS } from "@/lib/states";
+
+const STATE_NAMES: Record<string, string> = Object.fromEntries(
+  US_JURISDICTIONS.map((s) => [s.code, s.name]),
+);
+
+function esc(v: unknown): string {
+  return String(v)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function safeUrl(u: string | null | undefined): string | null {
+  if (!u) return null;
+  try {
+    const x = new URL(u);
+    return x.protocol === "http:" || x.protocol === "https:" ? x.href : null;
+  } catch {
+    return null;
+  }
+}
+
+function link(u: string | null | undefined, label?: string): string {
+  const href = safeUrl(u);
+  if (!href) return u ? esc(u) : "";
+  let text = label;
+  if (!text) {
+    try {
+      const x = new URL(href);
+      text = x.host.replace(/^www\./, "") + (x.pathname !== "/" ? x.pathname : "");
+    } catch {
+      text = href;
+    }
+  }
+  return `<a href="${esc(href)}" target="_blank" rel="noopener noreferrer">${esc(text)}</a>`;
+}
+
+function trunc(s: string, n: number): string {
+  return s.length > n ? s.slice(0, n - 1).trimEnd() + "…" : s;
+}
+
+function popupHtml(room: Room): string {
+  const r = room as Room & { tables?: number | null };
+  const rows: string[] = [];
+  const row = (label: string, html: string) => {
+    if (html) rows.push(`<dt>${esc(label)}</dt><dd>${html}</dd>`);
+  };
+  const type = r.type ? String(r.type).replace(/_/g, " ") : "";
+  const st = r.state ? String(r.state).toUpperCase() : "";
+  const stLink = st
+    ? STATE_BOUNDS[st]
+      ? `<a href="#" class="rp-state" data-state="${esc(st)}" title="Zoom to ${esc(STATE_NAMES[st] ?? st)}">${esc(st)}</a>`
+      : esc(st)
+    : "";
+  const cityLine = [r.city ? esc(r.city) : "", [stLink, r.postal_code ? esc(r.postal_code) : ""].filter(Boolean).join(" ")]
+    .filter(Boolean)
+    .join(", ");
+  const addr = [r.address ? esc(r.address) : "", cityLine].filter(Boolean).join("<br>");
+  row("Address", addr);
+  if (r.phone) {
+    const tel = String(r.phone).replace(/[^0-9+]/g, "");
+    row("Phone", tel ? `<a href="tel:${esc(tel)}">${esc(r.phone)}</a>` : esc(r.phone));
+  }
+  const games = Array.isArray(r.games) ? r.games.filter(Boolean).join(", ") : r.games || "";
+  row("Games", games ? esc(games) : "");
+  row("Stakes", r.stakes_notes ? esc(trunc(r.stakes_notes, 160)) : "");
+  row("Hours", r.hours ? esc(trunc(r.hours, 200)) : "");
+  row("Tables", r.tables != null && r.tables !== 0 ? esc(r.tables) : "");
+  row("Tourneys", r.tournament_notes ? esc(trunc(r.tournament_notes, 160)) : "");
+  row("Notes", r.notes ? esc(trunc(r.notes, 180)) : "");
+  row("Website", r.website ? link(r.website) : "");
+  const srcs = (r.sources ?? []).filter((s) => s && s.url);
+  const pokerPage = srcs.find((s) => /official poker page/i.test(s.title ?? ""));
+  if (pokerPage) row("Poker page", link(pokerPage.url));
+  const other = srcs.filter((s) => s !== pokerPage && safeUrl(s.url) !== safeUrl(r.website));
+  if (other.length) {
+    row(
+      "Sources",
+      other
+        .map((s) => {
+          const t = s.title ? trunc(s.title.replace(/\s*\(.*?verify.*?\)\s*/i, ""), 60) : undefined;
+          const d = s.retrieved_at ? ` <span class="rp-dim">${esc(s.retrieved_at.slice(0, 10))}</span>` : "";
+          return `<div>${link(s.url, t)}${d}</div>`;
+        })
+        .join(""),
+    );
+  }
+  const status = r.status && r.status !== "verified" ? String(r.status) : "";
+  return `<div class="room-popup">
+<div class="rp-name">${esc(r.name)}${status ? ` <span class="rp-status rp-${esc(status)}">${esc(status.toUpperCase())}</span>` : ""}</div>
+${type ? `<div class="rp-type">${esc(type)}</div>` : ""}
+<dl>${rows.join("")}</dl></div>`;
+}
 
 type Props = {
   rooms: Room[];
@@ -43,7 +140,13 @@ export default function RoomsMap({ rooms, live, error }: Props) {
   }, [rooms, editTick]);
 
   const pinned = useMemo(
-    () => merged.filter((r) => r.latitude != null && r.longitude != null),
+    () => merged.filter(
+        (r) =>
+          r.latitude != null &&
+          r.longitude != null &&
+          Math.abs(r.latitude) <= 90 &&
+          Math.abs(r.longitude) <= 180,
+      ),
     [merged],
   );
 
@@ -95,6 +198,26 @@ export default function RoomsMap({ rooms, live, error }: Props) {
         maxZoom: 19,
       }).addTo(map);
 
+      map.createPane("highways");
+      const hp = map.getPane("highways");
+      if (hp) {
+        hp.style.zIndex = "350";
+        hp.style.pointerEvents = "none";
+      }
+      const highways = L.tileLayer(
+        "https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}",
+        {
+          pane: "highways",
+          maxZoom: 19,
+          maxNativeZoom: 19,
+          attribution:
+            'Highways &copy; <a href="https://www.esri.com/">Esri</a>, HERE, Garmin, &copy; OpenStreetMap contributors',
+        },
+      );
+      L.control
+        .layers(undefined, { Highways: highways }, { position: "topright", collapsed: false })
+        .addTo(map);
+
       layerRef.current = L.layerGroup().addTo(map);
 
       const markGesture = () => {
@@ -121,6 +244,20 @@ export default function RoomsMap({ rooms, live, error }: Props) {
         passive: true,
       });
       map.getContainer().addEventListener("pointerup", pointerUpHandler);
+
+      map.getContainer().addEventListener("click", (ev) => {
+        const a = (ev.target as HTMLElement | null)?.closest?.("a.rp-state");
+        if (!a) return;
+        ev.preventDefault();
+        ev.stopPropagation();
+        const b = STATE_BOUNDS[a.getAttribute("data-state") ?? ""];
+        if (!b) return;
+        map.closePopup();
+        map.flyToBounds(
+          L.latLngBounds([b[0], b[1]], [b[2], b[3]]),
+          { maxZoom: 7, padding: [20, 20], duration: 0.8 },
+        );
+      });
 
       map.setView([39.8283, -98.5795], 4);
       setTimeout(() => map.invalidateSize(), 50);
@@ -164,6 +301,23 @@ export default function RoomsMap({ rooms, live, error }: Props) {
     if (nextKey === pinKeyRef.current) return;
     pinKeyRef.current = nextKey;
 
+    let closeTimer: ReturnType<typeof setTimeout> | null = null;
+    const cancelClose = () => {
+      if (closeTimer) clearTimeout(closeTimer);
+      closeTimer = null;
+    };
+    const scheduleClose = (m: import("leaflet").Marker) => {
+      cancelClose();
+      closeTimer = setTimeout(() => {
+        const el = m.getPopup()?.getElement();
+        if (el && el.matches(":hover")) {
+          el.addEventListener("mouseleave", () => scheduleClose(m), { once: true });
+          return;
+        }
+        m.closePopup();
+      }, 250);
+    };
+
     layer.clearLayers();
     const bounds: import("leaflet").LatLngExpression[] = [];
     for (const room of pinned) {
@@ -172,7 +326,19 @@ export default function RoomsMap({ rooms, live, error }: Props) {
       const pt: import("leaflet").LatLngExpression = [lat, lon];
       bounds.push(pt);
       const marker = L.marker(pt);
-      marker.bindTooltip(room.name, { direction: "top", opacity: 0.9 });
+      marker.bindPopup(() => popupHtml(room), {
+        maxWidth: 320,
+        minWidth: 220,
+        autoPan: true,
+        className: "room-popup-wrap",
+      });
+      // Hover opens (desktop); tap/click opens via Leaflet default (touch).
+      marker.on("mouseover", () => {
+        if (gesturingRef.current) return;
+        cancelClose();
+        if (!marker.isPopupOpen()) marker.openPopup();
+      });
+      marker.on("mouseout", () => scheduleClose(marker));
       marker.addTo(layer);
     }
 
