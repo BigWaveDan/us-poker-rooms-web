@@ -1059,3 +1059,296 @@ h2 {
 .room-popup .rp-status { font-size: 10px; padding: 1px 5px; border-radius: 6px; border: 1px solid currentColor; }
 .room-popup .rp-closed, .room-popup .rp-rejected { color: var(--closed); }
 .room-popup .rp-proposed { color: var(--proposed); }
+
+/* --- Tournaments --- */
+.tf-bar {
+  display: flex;
+  gap: 8px;
+  margin: 16px 0 8px;
+}
+
+.tf-search,
+.tf-filters input,
+.tf-filters select {
+  background: var(--input-bg);
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 15px;
+  min-height: 44px;
+  width: 100%;
+  min-width: 0;
+}
+
+.tf-search {
+  flex: 1;
+}
+
+.tf-toggle {
+  display: none;
+  min-height: 44px;
+}
+
+.tf-filters {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 8px 10px;
+  margin-bottom: 8px;
+}
+
+.tf-filters label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.tf-filters label span {
+  color: var(--faint);
+  font-size: 12px;
+}
+
+.tf-clear {
+  align-self: end;
+  min-height: 44px;
+}
+
+.tf-count {
+  margin: 8px 0;
+}
+
+.tt {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.tt th {
+  text-align: left;
+  color: var(--faint);
+  font-weight: 500;
+  font-size: 12px;
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line);
+}
+
+.tt td {
+  padding: 10px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+.tt .num {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.tt-when {
+  white-space: nowrap;
+  color: var(--muted);
+}
+
+.tt-name a {
+  font-weight: 600;
+}
+
+.tt-name .badge {
+  margin-left: 6px;
+}
+
+.tt-room .meta {
+  display: block;
+}
+
+.tt tr.cancelled .tt-name a {
+  text-decoration: line-through;
+}
+
+.tf-pager {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.tf-pager .btn {
+  min-height: 44px;
+  min-width: 96px;
+}
+
+.tf-pager .btn:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.td {
+  max-width: 760px;
+}
+
+.td h1 {
+  overflow-wrap: anywhere;
+}
+
+.td-crumb a,
+.td-room a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.td-room {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 10px;
+  margin: 0;
+}
+
+.td-pair {
+  display: contents;
+}
+
+.td .dl dd {
+  overflow-wrap: anywhere;
+}
+
+.td-register {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 22px;
+}
+
+.td-register:hover {
+  text-decoration: none;
+}
+
+.td-src {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  overflow-wrap: anywhere;
+}
+
+.td-raw summary {
+  cursor: pointer;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  color: var(--muted);
+}
+
+.td-raw pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  font-size: 13px;
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px;
+  margin: 0;
+}
+
+@media (max-width: 820px) {
+  .tf-filters {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .tf-toggle {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .tf-filters {
+    display: none;
+    grid-template-columns: 1fr;
+  }
+
+  .tf-filters.open {
+    display: grid;
+  }
+
+  .tt thead {
+    display: none;
+  }
+
+  .tt,
+  .tt tbody,
+  .tt tr,
+  .tt td {
+    display: block;
+    width: 100%;
+  }
+
+  .tt tr {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2px 12px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .tt td {
+    padding: 0;
+    border: 0;
+    width: auto;
+  }
+
+  .tt-name {
+    grid-column: 1 / -1;
+    order: -1;
+  }
+
+  .tt-name a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 16px;
+  }
+
+  .tt-when {
+    grid-column: 1 / -1;
+    white-space: normal;
+  }
+
+  .tt-room {
+    grid-column: 1;
+  }
+
+  .tt-game {
+    grid-column: 1;
+    color: var(--muted);
+  }
+
+  .tt .tt-buyin {
+    grid-column: 2;
+    grid-row: 3;
+    font-weight: 600;
+  }
+
+  .tt .tt-gtd {
+    grid-column: 2;
+    grid-row: 4;
+    color: var(--muted);
+  }
+}
+
+.td-also a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+}
+
+.tt .faint {
+  color: var(--faint);
+}
+
+@media (max-width: 640px) {
+  .tt-game:has(.faint) {
+    display: none;
+  }
+}
